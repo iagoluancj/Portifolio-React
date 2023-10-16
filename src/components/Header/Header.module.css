@@ -1,0 +1,57 @@
+header {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    height: 35rem;
+    max-height: 100%;
+    margin: 0rem; 
+
+    background-image: url(../../assets/img/bgHeader.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}   
+
+.header__Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__Content_h1 {
+    padding-top: 14rem;
+
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 10;
+    line-height: normal;
+}
+
+.header__Content p {
+    margin: 0rem 15rem 5rem 15rem;
+
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+    color: #FFF;
+}
+
+/* .header__Content_img {
+    background-image: url(../../assets/img/logoIago.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: static;
+    z-index: 1;
+
+    width: 400px;
+    height: 400px;
+} */

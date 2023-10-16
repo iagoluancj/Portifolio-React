@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --white: #fff;
+    --roxo: #402358;
+    --Gray-2c2c2c: #2c2c2c;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: block;
+    margin-top: 0rem;
+}
+body {
+    background-color: #001111;
+    margin: 0rem;
+    margin-top: -3rem;
+
+    font-family: Antonio;
+    -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+    font-family: Antonio;
+}
+
+a { 
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

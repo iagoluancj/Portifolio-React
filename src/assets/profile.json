@@ -1,0 +1,99 @@
+{
+  "name": "Iago Luan da Cruz de Jesus",
+  "photo": "https://avatars.githubusercontent.com/u/86308522?s=400&u=fd638dd57484d6323c33036cfcf726cfa8d693b1&v=4",
+  "occupation": "Front-end developer & UX Desginer",
+  "location": "Belo horizonte - MG",
+  "phone": "(31) 9 9882-9940",
+  "email": "iago.luancj@gmail.com",
+  "skills": {
+    "hardSkills": [
+      {
+        "name": "HTML5",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png",
+        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+      },
+      {
+        "name": "CSS3",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png",
+        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+      },
+      {
+        "name": "React",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/angular.png",
+        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+      },
+      {
+        "name": "React",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png",
+        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+      },
+      {
+        "name": "JavaScript",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/mongodb.png",
+        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+      },
+      {
+        "name": "Figma",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
+        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+      },
+      {
+        "name": "LangChain",
+        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
+        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+      }
+    ],
+    "competencias": [
+      "Inglês intermediário",
+      "UX Google Certificate - Coursera (Concluido)",
+      "Cursando ADS - Instituição",
+      "Técnico em informática e desenvolvimento de sistemas."
+    ]
+  },
+  "languages": [
+    "Português BR",
+    "Inglês (intermediário)",
+    "Espanhol (intermediário)",
+    "Italiano (iniciante)"
+  ],
+  "portfolio": [
+    {
+      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
+      "url": "https://github.com/RenanJPaula/js-developer-pokedex",
+      "thumb": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
+      "github": true
+    },
+    {
+      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
+      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+      "thumb": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
+      "github": true
+    },
+    {
+      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
+      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+      "thumb": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
+      "github": true
+    },
+    {
+      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
+      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+      "thumb": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
+      "github": true
+    }
+  ],
+  "aboutMe": [
+    {
+      "title": "Desenvolvendo do início ao fim",
+      "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
+    },
+    {
+      "title": "Foco no melhor para o usuário",
+      "description": "Foi um grande prazer fazer parte deste time fantástico e poder contribuir com a transformação de tantas vidas."
+    },
+    {
+      "tile": "Com acessibilidade e equidade a todos",
+      "description": "Anos incríveis ao lado de pessoas maravilhosas ajudando muitas empresas por todo o mundo."
+    }
+  ]
+}
