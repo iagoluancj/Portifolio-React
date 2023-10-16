@@ -1,6 +1,13 @@
 import styles from './MainContent.module.css'
 import jsonData from '../../assets/profile.json'
-import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaGithub, FaLinkedin, FaPhone, FaUser} from 'react-icons/fa';
+import { AiOutlineMail } from 'react-icons/ai';
+import { FaMapLocationDot } from 'react-icons/fa6';
+import email from '../../assets/img/email.png'
+import location from '../../assets/img/location.png'
+import skills from '../../assets/img/skills.png'
+import tel from '../../assets/img/tel.png'
+
 
 function MainContent() {
     return (
@@ -19,12 +26,41 @@ function MainContent() {
                             <a href=""><FaGithub size={40}/></a>
                         </div>
                         <div className={styles.profile__Informations}>
-                            <div className={styles.profile__Name}>{jsonData.name}</div>
-                            <div className={styles.profile__Info_Phone}>{jsonData.phone}</div>
-                            <div className={styles.profile__Info_Email}>{jsonData.email}</div>
-                            <div className={styles.profile__Info_Location}>{jsonData.location}</div>
+                            <div className={`${styles.profile__Name} ${styles.profile__InfoGeneralStyle}`}>
+                                <img className={styles.profile__Icon} src={email} alt="" />
+                                <div>
+                                    <div className={styles.profile__InfoTitle}>Nome:</div>
+                                    <div className={styles.profile__InfoP}>{jsonData.name}</div>
+                                    <div className={styles.profile__Line}></div>
+                                </div>
+                            </div>
+                            <div className={styles.profile__InfoGeneralStyle}>
+                                <img className={styles.profile__Icon} src={tel} alt="" />
+                                <div>
+                                    <div className={styles.profile__InfoTitle}>Telefone: </div>
+                                    <div className={styles.profile__InfoP}>{jsonData.phone}</div>
+                                    <div className={styles.profile__Line}></div>
+                                </div>
+                            </div>
+                            <div className={styles.profile__InfoGeneralStyle}>
+                                <img className={styles.profile__Icon} src={email} alt="" />
+                                <div>
+                                    <div className={styles.profile__InfoTitle}>Email: </div>
+                                    <div className={styles.profile__InfoP}>{jsonData.email} </div>
+                                    <div className={styles.profile__Line}></div>
+                                </div>
+                            </div>
+                            <div className={styles.profile__InfoGeneralStyle}>
+                                <img className={styles.profile__Icon} src={location} alt="" />
+                                <div>
+                                    <div className={styles.profile__InfoTitle}>Location: </div>
+                                    <div className={styles.profile__InfoP}>{jsonData.location} </div>
+                                    <div className={styles.profile__Line}></div>
+                                </div>
+                            </div>
 
                             <div className={styles.profile__Skills}>
+                                <span>Skills:</span>
                                 <ul>
                                     {jsonData.skills.competencias.map((competencia, index) => (
                                         <li key={index}>{competencia}</li>

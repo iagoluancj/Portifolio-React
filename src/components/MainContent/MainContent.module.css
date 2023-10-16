@@ -18,7 +18,7 @@ main {
 
 .main__div {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 340px 1fr;
     gap: 0rem;
     align-items: flex-start;
 
@@ -49,6 +49,14 @@ aside img {
     align-items: center;
 }
 
+.profile__Line {
+    height: 1px;
+    width: 200px;
+    background: linear-gradient(to right, #FA5252, #D32476);
+    position: relative;
+    z-index: 3;
+}
+
 .profile__Banner  {
     width: 100%;
     height: 82px;
@@ -69,6 +77,11 @@ aside img {
 
     position: relative;
     z-index: 1;
+}
+
+.profile__Icon {
+    width: 50px;
+    height: 50px;
 }
 
 .profile__Occupation {
@@ -101,6 +114,10 @@ aside img {
     max-width: 90%;
     height: 612px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     border: solid 1px;
     border-image: linear-gradient(to right, #E12BFF, #A61CF7, #5B0BEE, #5B0BEE) 1;
     background-origin: border-box;
@@ -109,11 +126,38 @@ aside img {
     background: var(--Gray-2c2c2c);
 }
 
+.profile__InfoGeneralStyle {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    margin: 0.5rem 0rem;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.profile__InfoGeneralStyle div { 
+    margin-bottom: 0.3rem;
+}
 
 
+.profile__InfoTitle {
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.profile__InfoP {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 
 section {
-    max-width: 1000px;
+    width: 900px;
     height: 2000px;
     flex-shrink: 0;
     margin: 1rem;
