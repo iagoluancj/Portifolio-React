@@ -14,9 +14,9 @@ function MainContent() {
                         </span>
                         <div className={styles.profile__Occupation}>{jsonData.occupation}</div>
                         <div className={styles.profile__Medias}>
-                            <a href=""><FaInstagram size={50}/></a>
-                            <a href=""><FaLinkedin size={50}/></a>
-                            <a href=""><FaGithub size={50}/></a>
+                            <a href=""><FaInstagram size={40}/></a>
+                            <a href=""><FaLinkedin size={40}/></a>
+                            <a href=""><FaGithub size={40}/></a>
                         </div>
                         <div className={styles.profile__Informations}>
                             <div className={styles.profile__Name}>{jsonData.name}</div>

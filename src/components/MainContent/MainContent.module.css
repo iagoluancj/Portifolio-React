@@ -43,6 +43,12 @@ aside img {
     overflow: hidden;
 }
 
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .profile__Banner  {
     width: 100%;
     height: 82px;
@@ -70,16 +76,38 @@ aside img {
     padding: 0.3rem;
     border-radius: 9px;
 
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
 
     background-color: var(--Gray-2c2c2c);
-    box-shadow: 0px 5px 15px -10px;
+    box-shadow: 0px 5px 15px -12px;
 }
 
-.profile__Medias span {
-    width: 50px;
+.profile__Medias {
+    margin: 0rem 0rem 1rem 0rem;
 }
 
+.profile__Medias a {
+    margin: 0rem 0.5rem;
+    transition: 0.3s;
+}
+
+.profile__Medias a:hover {
+    padding: 1rem;
+    transition: 0.3s;
+}
+
+.profile__Informations {
+    width: 300px;
+    max-width: 90%;
+    height: 612px;
+
+    border: solid 1px;
+    border-image: linear-gradient(to right, #E12BFF, #A61CF7, #5B0BEE, #5B0BEE) 1;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    background: var(--Gray-2c2c2c);
+}
 
 
 
