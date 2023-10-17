@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(./mediaQueries.css);
+
 :root {
     --white: #fff;
     --roxo: #402358;
     --Gray-2c2c2c: #2c2c2c;
-    --old-main-color-60: linear-gradient(#E12BFF, #A61CF7, #5B0BEE, #5B0BEE);
+    --gradient-Roxo: linear-gradient(
+        to right, 
+        #5B0BEE,
+        #E12BFF, 
+        #A61CF7, 
+        #5B0BEE
+    );
 }
 
 
@@ -39,4 +51,8 @@ ul  {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+img {
+    max-width: 100%;
 }

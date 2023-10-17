@@ -3,8 +3,13 @@
   "photo": "https://avatars.githubusercontent.com/u/86308522?s=400&u=fd638dd57484d6323c33036cfcf726cfa8d693b1&v=4",
   "occupation": "Front-end developer & UX Desginer",
   "location": "Belo horizonte - MG",
-  "phone": "(31) 9 9882-9940",
+  "phone": "+55 (31) 9 9882-9940",
   "email": "iago.luancj@gmail.com",
+  "socialMedias": {
+    "github": "https://github.com/iagoluancj",
+    "linkedin": "https://www.linkedin.com/in/iago-luan-4b4b02220/",
+    "instagram": "https://www.instagram.com/iago.luancj/"
+  },
   "skills": {
     "hardSkills": [
       {

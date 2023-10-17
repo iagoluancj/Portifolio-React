@@ -83,18 +83,21 @@ nav {
     padding: 7px;
     margin: 0rem 0.5rem;
 
-    background-color: #2c2c2c05;
-    color: #fff;
     border-radius: 7px;
-    
-    transition: 0.5s;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+
+    transition: 0.3s;
 }
 
 .nav__Options_Button:hover {
-    padding: 7px;
+    padding: 7px 10px;
 
-    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
     background-color: #2C2C2C;
+    border: 1px solid;
+    border-image: linear-gradient(to right, #FA5252, #D32476) 0 0 100% 0;
+
+    transition: 0.3s;
 }
 
 .acessibility {

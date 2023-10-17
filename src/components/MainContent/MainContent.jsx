@@ -1,13 +1,11 @@
 import styles from './MainContent.module.css'
 import jsonData from '../../assets/profile.json'
-import { FaInstagram, FaGithub, FaLinkedin, FaPhone, FaUser} from 'react-icons/fa';
-import { AiOutlineMail } from 'react-icons/ai';
-import { FaMapLocationDot } from 'react-icons/fa6';
+import { FaInstagram, FaGithub, FaLinkedin} from 'react-icons/fa';
 import email from '../../assets/img/email.png'
 import location from '../../assets/img/location.png'
 import skills from '../../assets/img/skills.png'
 import tel from '../../assets/img/tel.png'
-
+import user from '../../assets/img/user.png'
 
 function MainContent() {
     return (
@@ -19,15 +17,15 @@ function MainContent() {
                         <span className={styles.profile__divPhoto}>
                             <img src={jsonData.photo} alt="" className={styles.profile__Img} />
                         </span>
-                        <div className={styles.profile__Occupation}>{jsonData.occupation}</div>
+                        <div className={styles.profile__Occupation}><h4>{jsonData.occupation}</h4></div>
                         <div className={styles.profile__Medias}>
-                            <a href=""><FaInstagram size={40}/></a>
-                            <a href=""><FaLinkedin size={40}/></a>
-                            <a href=""><FaGithub size={40}/></a>
+                            <a href={jsonData.socialMedias.instagram} target='blank'><FaInstagram size={40}/></a>
+                            <a href={jsonData.socialMedias.linkedin} target='blank'><FaLinkedin size={40}/></a>
+                            <a href={jsonData.socialMedias.github} target='blank'><FaGithub size={40}/></a>
                         </div>
                         <div className={styles.profile__Informations}>
                             <div className={`${styles.profile__Name} ${styles.profile__InfoGeneralStyle}`}>
-                                <img className={styles.profile__Icon} src={email} alt="" />
+                                <img className={styles.profile__Icon} src={user} alt="" />
                                 <div>
                                     <div className={styles.profile__InfoTitle}>Nome:</div>
                                     <div className={styles.profile__InfoP}>{jsonData.name}</div>
@@ -51,7 +49,7 @@ function MainContent() {
                                 </div>
                             </div>
                             <div className={styles.profile__InfoGeneralStyle}>
-                                <img className={styles.profile__Icon} src={location} alt="" />
+                                <img className={styles.profile__IconLocation} src={location} alt="" />
                                 <div>
                                     <div className={styles.profile__InfoTitle}>Location: </div>
                                     <div className={styles.profile__InfoP}>{jsonData.location} </div>
@@ -60,12 +58,21 @@ function MainContent() {
                             </div>
 
                             <div className={styles.profile__Skills}>
-                                <span>Skills:</span>
+                                <div className={styles.profile__Title_Skills}> 
+                                    <img className={styles.profile__Icon} src={skills} alt="" />
+                                    <h2 className={styles.profile__InfoP} >Skills:</h2>
+                                </div>
                                 <ul>
                                     {jsonData.skills.competencias.map((competencia, index) => (
-                                        <li key={index}>{competencia}</li>
+                                        <li key={index} className={styles.profile__InfoTitle}>
+                                            {competencia}
+                                            <div className={styles.profile__Line}></div>
+                                        </li>
                                     ))}
                                 </ul>
+                            </div>
+                            <div className={styles.profile__downCurri}>
+                                <a href="" target='_blank'><h4>Curriculo completo</h4></a>
                             </div>
                         </div>
                     </div>
