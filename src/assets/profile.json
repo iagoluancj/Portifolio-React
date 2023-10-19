@@ -10,42 +10,50 @@
     "linkedin": "https://www.linkedin.com/in/iago-luan-4b4b02220/",
     "instagram": "https://www.instagram.com/iago.luancj/"
   },
+  "resume": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use",
   "skills": {
     "hardSkills": [
       {
         "name": "HTML5",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png",
-        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+        "level": "Intermédiario",
+        "logo": "https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
+        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
       },
       {
         "name": "CSS3",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png",
-        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+        "level": "Avançado",
+        "logo": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png",
+        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
       },
       {
         "name": "React",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/angular.png",
-        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+        "level": "Avançado",
+        "logo": "https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_logo_icon_146374.png",
+        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
       },
       {
         "name": "React",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png",
-        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+        "level": "Avançado",
+        "logo": ".githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png",
+        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
       },
       {
         "name": "JavaScript",
+        "level": "Avançado",
         "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/mongodb.png",
-        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
       },
       {
         "name": "Figma",
+        "level": "Avançado",
         "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
-        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
       },
       {
         "name": "LangChain",
+        "level": "Avançado",
         "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
-        "descriptionTechs": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
       }
     ],
     "competencias": [

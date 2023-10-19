@@ -1,0 +1,24 @@
+.buttonMoreView {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    width: 150px;
+    height: 40px;
+    margin: 1rem;
+
+    background: linear-gradient(to right, #FA5252, #D32476);
+    border-radius: 10px;
+    box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+    transition: 0.5s;
+
+    font-family: Roboto;
+}
+
+.buttonMoreView:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}

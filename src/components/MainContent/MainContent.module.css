@@ -1,15 +1,11 @@
-/* @import url(../../mediaQueries.css); */
-
 main {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     width: 100%;
 
-    background-image: linear-gradient(
-        120deg,
-        #a71cf7d8,
-        #5B0BEE
-    );
+    background-image: linear-gradient(120deg,
+            #a71cf7d8,
+            #5B0BEE);
 
     color: var(--white);
 
@@ -30,9 +26,10 @@ main {
 aside {
     text-align: center;
 
-    max-height: 1100px;
+    max-height: 1050px;
     margin: 1rem;
     padding-bottom: 2rem;
+    max-width: 340px;
 
     border-radius: 4px;
     background: #402358;
@@ -61,7 +58,7 @@ aside img {
     border-radius: 0rem 0rem 10rem 10rem;
 }
 
-.profile__Banner  {
+.profile__Banner {
     width: 100%;
     height: 82px;
     object-fit: cover;
@@ -104,8 +101,8 @@ aside img {
     background: var(--Gray-2c2c2c);
     box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
-    border: 1px solid transparent; 
-    border-image: var(--gradient-Roxo) 1; 
+    border: 1px solid transparent;
+    border-image: var(--gradient-Roxo) 1;
 }
 
 /* .profile__Occupation::after { 
@@ -167,7 +164,7 @@ aside img {
     justify-content: space-around;
 }
 
-.profile__InfoGeneralStyle div { 
+.profile__InfoGeneralStyle div {
     margin-bottom: 0.3rem;
 }
 
@@ -215,7 +212,7 @@ aside img {
     margin: 0.5rem 0rem;
 }
 
-.profile__Skills ul li{
+.profile__Skills ul li {
     margin: 0.4rem 1rem;
 }
 
@@ -223,33 +220,126 @@ aside img {
     width: 100%;
 }
 
-
-.profile__downCurri {
-    display: flex;
-    width: 150px;
-    height: 40px;
-    flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(to right, #FA5252, #D32476);
-    border-radius: 10px;
-    box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
-    margin: 1rem;
-    transition: 0.5s;
-}
-
-.profile__downCurri:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-    cursor: pointer;
-}
-
 section {
     height: 2000px;
     flex-shrink: 0;
     margin: 1rem;
-    max-width: 100%;
+    width: 95%;
 
     border-radius: 4px;
     background: #402358;
 }
 
+.profile__Techs > h2 {
+    font-family: Roboto;
+    font-size: 2.188rem;
+    font-weight: 700;
+
+    padding: 1rem 0rem;
+}
+
+.profile__Techs {
+    padding-top: 7rem;
+    text-align: start;
+
+}
+
+.profile__TechsOne div img { 
+    width: 92px;
+    height: 87px;
+}
+
+.profile__TechsOne div p { 
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+}
+
+.profile__TechsOne {
+    width: 330px;
+    height: 180px;
+
+    border-radius: 5px;
+    background: var(--2C2C2C, #2C2C2C);
+    box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.profile__TechsOne {
+    text-align: right;
+}
+
+.profile__TechsOne span {
+    padding: 0rem 1rem;
+}
+
+.profile__TechsHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0.7rem 0rem 0rem 0rem;
+}
+
+.profile__TechsImageAndP {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.profile__TechsImageAndP img {
+    margin-left: 10px;
+}
+
+
+.profile__TechsImageAndP p {
+   width: 220px;
+   text-align: justify;
+   padding: 0.5rem 1rem;
+}
+.profile__TechsOne + .profile__TechsOne {
+    margin: 1rem 0rem;
+} /* irá estilsar todo card que tiver um card anterior.  */
+
+@media (max-width: 1040px) {
+    .main__div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        justify-content: center;
+        align-items: center;
+    }
+    aside {
+        max-width: 320px;
+        height: 100%;
+        max-height: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+    .profile__Techs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem;
+        padding-top: 1rem;
+    }
+    section {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    aside {
+        max-width: 310px;
+    }
+
+    section {
+        max-width: 80%;
+    }
+}

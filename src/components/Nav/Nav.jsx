@@ -1,4 +1,8 @@
 import styles from './Nav.module.css'
+
+import { IoMenu } from 'react-icons/io5';
+
+
 function Nav() {
     return (
     <nav>    
@@ -12,17 +16,26 @@ function Nav() {
             </div>
             
             <div className={styles.nav__Options}>
-                <div>
+                <div className={styles.nav__OptionsSDiv}>
                     <a href="" className={styles.nav__Options_Button}>Projects</a>
                     <a href="" className={styles.nav__Options_Button}>Techs</a>
                     <a href="" className={styles.nav__Options_Button}>Contact</a>
                     <a href="" className={styles.nav__Options_Button}>About me</a>
                 </div>
+                <div id={styles.nav__menuBurguer} onClick={openMenu()}><IoMenu size={40}/></div>
                 <div className={`${styles.nav__Options_Button} ${styles.acessibility}`}></div>
             </div>
         </div>
     </nav>    
     )
 }
+
+function openMenu() {
+    // if (nav__menuBurguer.style.display == 'flex') {
+    //     nav__menuBurguer.style.display = 'none'
+    // } else {
+    //     nav__menuBurguer.style.display = 'flex'
+    // }
+  }
 
 export default Nav

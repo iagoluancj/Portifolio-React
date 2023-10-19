@@ -52,7 +52,6 @@ nav {
 }
 
 .nav_describeOne {
-    color: #FFF;
     font-family: Antonio;
     font-size: 32px;
     font-style: normal;
@@ -62,7 +61,6 @@ nav {
 }
 
 .nav_describeTwo {
-    color: #FFF;
     font-family: Antonio;
     font-size: 16px;
     font-style: normal;
@@ -117,6 +115,45 @@ nav {
     background-color: rgba(245, 222, 179, 0);
 
     cursor: pointer;
+    border-radius: 0px;
 }
 
+#nav__menuBurguer {
+    display: none;
+}
 
+@media (max-width: 1040px) { 
+    .nav {
+        height: 70px;
+    }
+
+    .nav_describeOne {
+        font-size: 24px;
+    }
+
+    .nav_describeTwo {
+        font-size: 14px;
+    }
+    
+    .nav__ImgLogo {
+        width: 100px;
+        height: 100px;
+        margin-right: 5px;
+    }
+  }
+
+@media (max-width: 732px) { 
+    .nav__OptionsSDiv {
+        display: none;
+    }
+    #nav__menuBurguer {
+        display: block;
+        transition: 0.4s;
+    }
+    #nav__menuBurguer:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+
+        transition: 0.4s;
+    }
+}
