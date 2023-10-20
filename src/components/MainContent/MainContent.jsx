@@ -152,6 +152,12 @@ function MainContent() {
                                 <img src={bgHeader} alt="" />
                                 <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
                             </div>
+                            <div className={styles.project}>
+                                {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
+                                <h2>TITLE PROJECT</h2>
+                                <img src={bgHeader} alt="" />
+                                <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
+                            </div>
                         </div>
                         <ButtonMore value="Ver mais..." />
                     </div>

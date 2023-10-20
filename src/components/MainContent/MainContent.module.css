@@ -2,8 +2,8 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    
+    height: 2800px;
+
     position: relative;
     background: linear-gradient(120deg, #a71cf7d8,  #5B0BEE);
     background-size: 400% 400%;
@@ -106,15 +106,6 @@ aside img {
     border: 1px solid transparent;
     border-image: var(--gradient-Roxo) 1;
 }
-
-/* .profile__Occupation::after { 
-    content: '';
-    height: 1px;
-    display: block;
-    background-color: white;
-    border: 1px solid transparent;
-    border-radius: 0px 0px 10px 10px;
-} */
 
 .profile__Occupation h4 {
     background-image: var(--gradient-Roxo);
@@ -283,7 +274,6 @@ aside img {
     margin-left: 10px;
 }
 
-
 .profile__TechsImageAndP p {
     width: 220px;
     text-align: justify;
@@ -297,7 +287,6 @@ aside img {
 }
 
 section {
-    height: 2000px;
     flex-shrink: 0;
     margin: 1rem;
     width: 88%;
@@ -307,6 +296,10 @@ section {
     background: #402358;
 
     padding: 2rem 3rem 0rem 3rem;
+}
+
+main .main__div section {
+    height: 1850px;
 }
 
 .about__me {
@@ -419,6 +412,10 @@ section {
 /* irá estilsar todo card que tiver um card anterior.  */
 
 @media (max-width: 1040px) {
+    main {
+        height: 3760px;
+    }
+
     .main__div {
         display: flex;
         flex-direction: column;
@@ -463,10 +460,12 @@ section {
         margin-left: 0px;
     }
 
-    section {
+    main .main__div section {
+        width: 700px;
         max-width: 80%;
         padding: 1rem;
         margin: 0.3rem;
+        height: 2300px;
     }
 
     .about__me {
@@ -476,6 +475,10 @@ section {
 
     .about__meHeader {
         width: 100%;
+    }
+
+    .about__meHeader h1 {
+        font-size: 30px;
     }
 
     .about__card {
@@ -496,8 +499,22 @@ section {
     .about__cardSHeader h2{
         margin-top: 0.4rem;
     }
+    
+    .project {
+        width: 400px;
+    }
 
+    .projectDiv {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0rem 0.4rem;
 
+        height: 400px;
+
+        overflow: auto;
+    }
 }
 
 @media (max-width: 700px) {
@@ -505,8 +522,13 @@ section {
         max-width: 310px;
     }
 
-    section {
-        max-width: 50%;
+    main {
+        height: 4200px;
+    }
+
+    main .main__div section {
+        width: 400px;
+        height: 2750px;
     }
 }
 
