@@ -45,13 +45,24 @@ header {
     color: #FFF;
 }
 
+.header__Content::after {
+    content: "";
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: -3rem;
+    background: linear-gradient(180deg, var(--Gray-2c2c2c), transparent);
+}
+
+
 @media (max-width: 1040px) { 
     .header__Content_h1 {
-        margin: 2rem 3rem;
+        padding-top: 11rem;
+        margin: 3rem 2rem;
         font-size: 42px;
     }
     .header__Content p {
         margin: 0rem 2rem 5rem 2rem;
         font-size: 18px;
     }
-  }
+}

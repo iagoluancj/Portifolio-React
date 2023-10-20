@@ -6,11 +6,9 @@ import location from '../../assets/img/location.png'
 import skills from '../../assets/img/skills.png'
 import tel from '../../assets/img/tel.png'
 import user from '../../assets/img/user.png'
-import one from '../../assets/img/one.png'
-import two from '../../assets/img/two.png'
-import three from '../../assets/img/three.png'
 
 import ButtonMore from '../ButtonMore/ButtonMore';
+import bgHeader from '../../assets/img/bgHeader.png'
 
 function MainContent() {
     return (
@@ -80,60 +78,80 @@ function MainContent() {
                     </div>
                     <div className={styles.profile__Techs}>
                         <h2>Técnologias e ferramentas</h2>
-                        {jsonData.skills.hardSkills.map((hardSkills, index) => (
-                            <div key={index} className={styles.profile__TechsOne}>
-                                <div className={styles.profile__TechsHeader}>
-                                    <h3 className={styles.profile__InfoP}>{jsonData.skills.hardSkills[index].name}</h3>
-                                    <div className={styles.profile__Line}></div>
+                        <div className={styles.profile__TechsCarrousel}>
+                            {jsonData.skills.hardSkills.map((hardSkills, index) => (
+                                <div key={index} className={styles.profile__TechsOne}>
+                                    <div className={styles.profile__TechsHeader}>
+                                        <h3 className={styles.profile__InfoP}>{jsonData.skills.hardSkills[index].name}</h3>
+                                        <div className={styles.profile__Line}></div>
+                                    </div>
+                                    <span className={styles.profile__InfoP}>{jsonData.skills.hardSkills[index].level}</span>
+                                    <div className={styles.profile__TechsImageAndP}>
+                                        <img src={jsonData.skills.hardSkills[index].logo} alt="" />
+                                        <p>{jsonData.skills.hardSkills[index].description}</p>
+                                    </div>
                                 </div>
-                                <span className={styles.profile__InfoP}>{jsonData.skills.hardSkills[index].level}</span>
-                                <div className={styles.profile__TechsImageAndP}>
-                                    <img src={jsonData.skills.hardSkills[index].logo} alt="" />
-                                    <p>{jsonData.skills.hardSkills[index].description}</p>
-                                </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                         <ButtonMore value="Ver mais..." />
                     </div>
                 </aside>
-                <section className={styles.main__Content}>
+
+                <section>
                     <div className={styles.about__me}>
-                        <h1>Sobre mim</h1>
-                        <div className={styles.profile__Line}></div>
-                        <p>{jsonData.resume}</p>
-                        <p>{jsonData.resume}</p>
+                        <div className={styles.about__meHeader}>
+                            <h1>Sobre mim</h1>
+                            <div className={styles.profile__Line}></div>
+                        </div>
+                        <div className={styles.about__meResume}>
+                            <p>{jsonData.resume}</p>
+                            <p>{jsonData.resume}</p>
+                        </div>
                     </div>
 
                     <div className={styles.about__card}>
-                        <div className={styles.about__cardOne}>
-                            <div className="styles card__Icon"></div>
-                            <img src={one} alt="Simbolos padrão para representar código web" />
-                            <h1>Desenvolvendo do inico ao fim</h1>
-                            <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribut'Content here, content here', making it look like readable English. Many desktop publishing pacage editors now use `}</p>
-                        </div>
-                        <div className={styles.about__cardTwo}>
-                            <div className="styles card__Icon"></div>
-                            <img src={two} alt="Folha estilisada UI/UX" />
-                            <h1>Foco no melhor para o usuário</h1>
-                            <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribut'Content here, content here', making it look like readable English. Many desktop publishing pacage editors now use `}</p>
-                        </div>
-                        <div className={styles.about__cardThree}>
-                            <div className="styles card__Icon">{three}</div>
-                            <img src={three} alt="Imagem representativa HTML to CSS" />
-                            <h1>Com acessibilidade e equidade a todos</h1>
-                            <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribut'Content here, content here', making it look like readable English. Many desktop publishing pacage editors now use `}</p>
-                        </div>
+                        {jsonData.aboutMe.map((card, index) => (
+                            <div key={index} className={styles.about__cardS}>
+                                <div className={styles.about__cardSHeader}>
+                                    <img src={jsonData.aboutMe[index].icon} alt="Simbolos padrão para representar código web" />
+                                    <h2>{jsonData.aboutMe[index].title}</h2>
+                                </div>
+                                <p>{jsonData.aboutMe[index].description}</p>
+                            </div>
+                        ))}
                     </div>
 
                     <div className={styles.projects}>
-                        <h1>Últimos projetos e destaques</h1>
-                        <div className={styles.profile__Line}></div>
+                        <div className={styles.about__meHeader} >
+                            <h1>Últimos projetos e destaques</h1>
+                            <div className={styles.profile__Line}></div>
+                        </div>
 
-                        <div>
-                            {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
-                            <h2>TITLE PROJECT</h2>
-                            <img src="" alt="" />
-                            <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
+                        <div className={styles.projectDiv}>
+                            <div className={styles.project}>
+                                {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
+                                <h2>TITLE PROJECT</h2>
+                                <img src={bgHeader} alt="" />
+                                <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
+                            </div>
+                            <div className={styles.project}>
+                                {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
+                                <h2>TITLE PROJECT</h2>
+                                <img src={bgHeader} alt="" />
+                                <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
+                            </div>
+                            <div className={styles.project}>
+                                {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
+                                <h2>TITLE PROJECT</h2>
+                                <img src={bgHeader} alt="" />
+                                <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
+                            </div>
+                            <div className={styles.project}>
+                                {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
+                                <h2>TITLE PROJECT</h2>
+                                <img src={bgHeader} alt="" />
+                                <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
+                            </div>
                         </div>
                         <ButtonMore value="Ver mais..." />
                     </div>

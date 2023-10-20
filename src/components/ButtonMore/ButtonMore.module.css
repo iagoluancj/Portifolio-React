@@ -22,3 +22,9 @@
     transition: 0.5s;
     cursor: pointer;
 }
+
+.ButtonMore {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

@@ -15,8 +15,24 @@
         #A61CF7, 
         #5B0BEE
     );
+    --gradient-Red: linear-gradient(
+        to right, 
+        #FA5252, 
+        #D32476
+    );
+
+    scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 1px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #FA5252, #D32476);
+    border-radius: 5px;
+}
 
 * {
     margin: 0;

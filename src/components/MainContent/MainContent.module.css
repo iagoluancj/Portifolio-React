@@ -2,10 +2,12 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-
-    background-image: linear-gradient(120deg,
-            #a71cf7d8,
-            #5B0BEE);
+    height: 100%;
+    
+    position: relative;
+    background: linear-gradient(120deg, #a71cf7d8,  #5B0BEE);
+    background-size: 400% 400%;
+    animation: animate 2s ease infinite alternate;
 
     color: var(--white);
 
@@ -220,16 +222,6 @@ aside img {
     width: 100%;
 }
 
-section {
-    height: 2000px;
-    flex-shrink: 0;
-    margin: 1rem;
-    width: 95%;
-
-    border-radius: 4px;
-    background: #402358;
-}
-
 .profile__Techs > h2 {
     font-family: Roboto;
     font-size: 2.188rem;
@@ -244,12 +236,12 @@ section {
 
 }
 
-.profile__TechsOne div img { 
+.profile__TechsOne div img {
     width: 92px;
     height: 87px;
 }
 
-.profile__TechsOne div p { 
+.profile__TechsOne div p {
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -264,10 +256,8 @@ section {
     border-radius: 5px;
     background: var(--2C2C2C, #2C2C2C);
     box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
-}
-
-.profile__TechsOne {
     text-align: right;
+
 }
 
 .profile__TechsOne span {
@@ -289,49 +279,225 @@ section {
     align-items: center;
 }
 
-
 .profile__TechsImageAndP img {
     margin-left: 10px;
 }
 
 
 .profile__TechsImageAndP p {
-   width: 220px;
-   text-align: justify;
-   padding: 0.5rem 1rem;
+    width: 220px;
+    text-align: justify;
+    padding: 0.5rem 1rem;
+
+    text-overflow: ellipsis;
 }
+
 .profile__TechsOne + .profile__TechsOne {
     margin: 1rem 0rem;
-} /* irá estilsar todo card que tiver um card anterior.  */
+}
+
+section {
+    height: 2000px;
+    flex-shrink: 0;
+    margin: 1rem;
+    width: 88%;
+    height: 100%;
+
+    border-radius: 4px;
+    background: #402358;
+
+    padding: 2rem 3rem 0rem 3rem;
+}
+
+.about__me {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about__meHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about__meHeader .profile__Line {
+    width: 70%;
+}
+
+.about__meResume {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.about__card {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.about__cardS {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.6rem;
+    text-align: justify;
+    gap: 1rem;
+    margin: 0rem 1rem;
+    max-width: 300px;
+
+    background-color: var(--Gray-2c2c2c);
+    border-radius: 10px;
+    box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.about__cardSHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    text-align: center;
+}
+
+.about__cardSHeader img {
+    width: 70px;
+}
+
+.about__cardSHeader h2 {
+    font-size:  1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
+.about__cardS p {
+    font-size: .875rem;
+}
+
+.projects .about__meHeader {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.projects .about__meHeader .profile__Line {
+    width: 35%;
+}
+
+.projectDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+    justify-content: space-evenly;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 260px;
+    height: 400px;
+
+    border-radius: 10px;
+    background: #D9D9D9;
+    box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* irá estilsar todo card que tiver um card anterior.  */
 
 @media (max-width: 1040px) {
     .main__div {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
 
-        justify-content: center;
         align-items: center;
     }
+
     aside {
         max-width: 320px;
         height: 100%;
         max-height: 100%;
-
-        display: flex;
-        flex-direction: column;
-    }
-    .profile__Techs {
-        display: flex;
-        flex-direction: column;
+        
         justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile__TechsCarrousel {
+        display: flex;
         align-items: center;
-        margin: 0.5rem;
-        padding-top: 1rem;
+        gap: 1rem;
+
+        overflow: auto;
     }
+    
+    .profile__TechsHeader .profile__Line {
+        width: 50%;
+    }
+
+    .profile__Techs {
+        padding: 0rem 1rem;
+    }
+
+    .profile__Techs h2 {
+        font-size: 1.3rem;
+
+        padding-top: 2rem;
+        padding-bottom: 0px;
+    }
+
+    .profile__TechsImageAndP img {
+        margin-left: 0px;
+    }
+
     section {
-        max-width: 100%;
+        max-width: 80%;
+        padding: 1rem;
+        margin: 0.3rem;
     }
+
+    .about__me {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about__meHeader {
+        width: 100%;
+    }
+
+    .about__card {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .about__cardSHeader {
+        display: block;
+        margin: 1rem 0rem;
+    }
+
+    .about__cardSHeader {
+        display: block;
+        margin: 1rem 0rem;
+    }
+
+    .about__cardSHeader h2{
+        margin-top: 0.4rem;
+    }
+
+
 }
 
 @media (max-width: 700px) {
@@ -340,6 +506,26 @@ section {
     }
 
     section {
-        max-width: 80%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .about__cardS {
+        display: block;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
     }
 }

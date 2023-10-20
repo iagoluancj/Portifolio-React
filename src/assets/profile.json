@@ -97,16 +97,19 @@
   ],
   "aboutMe": [
     {
-      "title": "Desenvolvendo do início ao fim",
-      "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
+      "title": "Developing from start to finish",
+      "description": "Nos projetos mostrado no portfolio abaixo há uma gama diversificada de plataformas visadas e tecnologias utilizadas na construção dos mesmos, em alguns eu desenvolvi o projeto desde a criação de empatia com o usuário até o desenvolvimento. Em outros eu fiz somente uma dessas partes, algumas das ferramentas usadas foram o HTML5, CSS3, JavaScript, Figma e entre outras.",
+      "icon": "https://s3-alpha-sig.figma.com/img/ef82/44ca/810fc6404557519ed1c15a982290f2f9?Expires=1698624000&Signature=LVtw3z~Ts82mx-Ja56T0ai7RPXTPA-7~pXMq18NgMIoeA4mwAlMwre94tc9bkvugcebqk-n-a6IcZWPv-WlbRE8lZ7FDyhjUsLO04mPke2Dys~1gyxqpBDLhTpKsWxHrh~zSvZTrC5-lX~EIACRwLGVqLGGpoAcznTJGLdPTUnZSQYStCcJi884JW9gOfmx-btGdwoS98MKtEaJdTmr3c3Kg5jAKueOffawRIp8WrQCo3qGpvK3H-zRQPrrkzUfYpHiGG9aF3ELElkR3AEtK7ojccllUDjEx62UVuPeymzq6CT6g1vm0RlK8BYVsTHFCmXjqDzRbhRCMQDqP2V-kNA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
-      "title": "Foco no melhor para o usuário",
-      "description": "Foi um grande prazer fazer parte deste time fantástico e poder contribuir com a transformação de tantas vidas."
+      "title": "Focus on the best for the user",
+      "description": "Comecei meus estudos em desenvolvimento e me encontrei de verdade no UI/UX, fiquei em dúvida de qual lado seguir pois apesar da preferencia pelo UI/UX eu ainda era fascinado pelo desenvolvimento e foi então onde eu vi uma oportunidade de implementar os dois, vi que não era uma limitação mas sim uma perfeita conjunção. Com isso pude ver situações onde UX e DEV interagem de forma primorosa para fazer o melhor para o usuário.",
+      "icon": "https://s3-alpha-sig.figma.com/img/805e/a180/6ea94e2c7070cfae4691623b5f010580?Expires=1698624000&Signature=L5TDoePpiQ9hHfLHH0Z~RHcsqBvsxRhz76trIDmhwq6xHnwObwBUQZgZLqmdXHZUQG8kOisM2pbXXaoFWFB6Yw3L7dELf2dAupSr2mxm1dwq785QjLdUgSXqEtII~aMIGRWJQd9OhQ6-D13eF34D7uN4O73BXo8OfWq6Qsd8Uhyk~AuWC6Xt0XZPGoQt28hYFRgL5afMye8P7O5o85t7iPS~bxNs7vis7gFQ1RUbkvBToY8lXaSNi6vpSDXDHKqgfPAIcmQSlnnsv0k4XiVg9XNauLZPuj-KirMP9U9-8ENbDaQpImAG11liql8dabd6gxjDrDiaeFjozStnPh7LTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     },
     {
-      "tile": "Com acessibilidade e equidade a todos",
-      "description": "Anos incríveis ao lado de pessoas maravilhosas ajudando muitas empresas por todo o mundo."
+      "title": "Accessibility and equity for all",
+      "description": "Digo com humildade que oque aprendi nessa minha carga de conhecimento que tanto desenvolvimento quanto a experiência do usuário quando é focada na acessibilidade é algo que podemos ver apenas vantagens, seja esse foco no auxilio de deficiências permanentes ou temporárias, os benefícios de ferramentas adaptadas a isso é um melhor uso para todos tipos de usuários.",
+      "icon": "https://s3-alpha-sig.figma.com/img/8575/85b7/357c39169748143dbd564bd51a9f49f6?Expires=1698624000&Signature=mfOFvDFUcxTHSTDVvFEP0PinouZlHwxzlti0JD~PzyyGdxIExgJ23v3~cRu2stri6XiZlMqpxTokSnki9YPjIo1nA1t3JWsJS5m9on1ukui2QoFKN9EeNm9HTkZdUFWPIb3VDvtuvcEgYj3TgbV87rduzCcDNvJr78-VeMWnMEz7IS~BlCb0NWm2LdmyKYwEc1nK-MnJnr5y1-g3Eb9Bq1Se8avvS7sHJQfeZ6wWo7TgO4Z6fYfRg0orPGe2PJaqg~n4K2aqWjXt9QS8sM7k~M5P7gJYREJSncoZf8X77AG54VPS5wpZgoUC~YdAF6hxWk4LWV1YQr5tdB73eFRSrw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
     }
   ]
 }
