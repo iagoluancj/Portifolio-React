@@ -1,7 +1,7 @@
 {
   "homepage": "https://iagoluancj.github.io/Portifolio-React",
   "name": "01-fundamentos-reactjs",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
