@@ -28,3 +28,10 @@
     align-items: center;
     justify-content: flex-end;
 }
+
+/*--------------------------*/
+.buttonDisabled {
+    pointer-events: none; /* Impede cliques no botão desativado */
+    opacity: 0.5; /* Reduz a opacidade para indicar desativado */
+    /* Outros estilos que você deseja aplicar ao botão desativado */
+}

@@ -5,6 +5,7 @@
   "location": "Belo horizonte - MG",
   "phone": "+55 (31) 9 9882-9940",
   "email": "iago.luancj@gmail.com",
+  "apiGitHub": "https://api.github.com/users/iagoluancj",
   "socialMedias": {
     "github": "https://github.com/iagoluancj",
     "linkedin": "https://www.linkedin.com/in/iago-luan-4b4b02220/",
@@ -34,7 +35,7 @@
       {
         "name": "React",
         "level": "Avançado",
-        "logo": ".githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png",
+        "logo": "https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_logo_icon_146374.png",
         "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
       },
       {

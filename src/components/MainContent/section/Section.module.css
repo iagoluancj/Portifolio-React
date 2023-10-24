@@ -1,0 +1,254 @@
+section {
+    margin: 1rem;
+    border-radius: 4px;
+    background: #402358;
+
+    padding: 2rem 3rem 0rem 3rem;
+}
+
+section button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+}
+
+&::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* section {
+    height: 1900px;
+} */
+
+.about__me {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about__meHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.about__meHeader .profile__Line {
+    width: 70%;
+}
+
+.about__meResume {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.about__card {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.about__cardS {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.6rem;
+    text-align: justify;
+    gap: 1rem;
+    margin: 0rem 1rem;
+    max-width: 300px;
+
+    background-color: var(--Gray-2c2c2c);
+    border-radius: 10px;
+    box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.about__cardSHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+    text-align: center;
+}
+
+.about__cardSHeader img {
+    width: 70px;
+}
+
+.about__cardSHeader h2 {
+    font-size:  1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
+.about__cardS p {
+    font-size: .875rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .about__meHeader {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.projects .about__meHeader .profile__Line {
+    width: 35%;
+}
+
+.projectDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+    justify-items: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 260px;
+    height: 400px;
+
+    border-radius: 10px;
+    background: #D9D9D9;
+    box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.about__cardS {
+    position: sticky;
+    animation: moveUp 5s ease-in-out infinite;
+}
+
+.profile__Line {
+    height: 3px;
+    width: 200px;
+    background: linear-gradient(to right, #FA5252, #D32476);
+    position: relative;
+
+    border-radius: 0rem 0rem 10rem 10rem;
+}
+
+/* @media (min-width: 1500px) {
+    section {
+        height: 1800px;
+    }
+} */
+
+@media (max-width: 1300px) {
+    .about__cardS {
+        display: block;
+    }
+}
+
+@media (max-width: 1325px) {
+    .about__cardSHeader {
+        display: block;
+        margin: 1rem 0rem;
+    }
+    .projectDiv {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 1040px) {
+    section {
+        width: 90%;
+        padding: 1rem;
+        margin: 0.3rem;
+    }
+
+    .about__me {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about__meHeader {
+        width: 100%;
+    }
+
+    .about__meHeader h1 {
+        font-size: 30px;
+    }
+
+    .about__card {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .about__cardSHeader {
+        display: block;
+        margin: 1rem 0rem;
+    }
+
+    .about__cardSHeader h2{
+        margin-top: 0.4rem;
+    }
+    
+    .project {
+        width: 400px;
+    }
+
+    .projectDiv {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0rem 0.4rem;
+
+        height: 400px;
+
+        overflow: auto;
+    }
+}
+
+@media (max-width: 390px) {
+    section {
+        width: 300px;
+    }
+}
+
+@keyframes moveUp {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-5px); 
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

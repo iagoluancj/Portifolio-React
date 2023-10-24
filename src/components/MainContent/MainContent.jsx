@@ -1,5 +1,6 @@
 import styles from './MainContent.module.css'
 import jsonData from '../../assets/profile.json'
+
 import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import email from '../../assets/img/email.png'
 import location from '../../assets/img/location.png'
@@ -7,10 +8,24 @@ import skills from '../../assets/img/skills.png'
 import tel from '../../assets/img/tel.png'
 import user from '../../assets/img/user.png'
 
+import { useState } from 'react';
+
 import ButtonMore from '../ButtonMore/ButtonMore';
-import bgHeader from '../../assets/img/bgHeader.png'
+import Section from './section/section';
 
 function MainContent() {
+    const [techs, setTechs] = useState([
+        1, 2, 3
+    ])  
+    const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+    function handleCreateNewTech() {
+        //essa linha impede que o coportamento padrão do HTML seja executado (abrir em uma nova aba, diverge do SPA)
+        if (techs.length >= jsonData.skills.hardSkills.length) {
+            setIsButtonDisabled(true);
+        }
+        setTechs([...techs, techs.length + 1])
+    }
+
     return (
         <main>
             <div className={styles.main__div}>
@@ -25,7 +40,7 @@ function MainContent() {
                             <a href={jsonData.socialMedias.linkedin} target='blank'><FaLinkedin size={40} /></a>
                             <a href={jsonData.socialMedias.github} target='blank'><FaGithub size={40} /></a>
                         </div>
-                        <div className={styles.profile__Informations}>
+                        <div id="Contact" className={styles.profile__Informations}>
                             <div className={`${styles.profile__Name} ${styles.profile__InfoGeneralStyle}`}>
                                 <img className={styles.profile__Icon} src={user} alt="" />
                                 <div>
@@ -65,7 +80,7 @@ function MainContent() {
                                     <h2 className={styles.profile__InfoP} >Skills:</h2>
                                 </div>
                                 <ul>
-                                    {jsonData.skills.competencias.map((competencia, index) => (
+                                    {jsonData.skills.competencias.slice(0, 5).map((competencia, index) => (
                                         <li key={index} className={styles.profile__InfoTitle}>
                                             {competencia}
                                             <div className={styles.profile__Line}></div>
@@ -73,13 +88,14 @@ function MainContent() {
                                     ))}
                                 </ul>
                             </div>
-                            <ButtonMore value="Curriculo completo" />
+                            <ButtonMore value="Curriculo completo" href="https://drive.google.com/file/d/18k7nZUdDBIYyoWFdmshH3YzsOWgUmYAl/view?usp=sharing" />
                         </div>
                     </div>
-                    <div className={styles.profile__Techs}>
-                        <h2>Técnologias e ferramentas</h2>
+
+                    <div id="Techs" className={styles.profile__Techs}>
+                        <h2>Técnologias e ferramentas</h2>                       
                         <div className={styles.profile__TechsCarrousel}>
-                            {jsonData.skills.hardSkills.map((hardSkills, index) => (
+                            {jsonData.skills.hardSkills.slice(0, techs.length).map((hardSkills, index) => (
                                 <div key={index} className={styles.profile__TechsOne}>
                                     <div className={styles.profile__TechsHeader}>
                                         <h3 className={styles.profile__InfoP}>{jsonData.skills.hardSkills[index].name}</h3>
@@ -93,75 +109,12 @@ function MainContent() {
                                 </div>
                             ))}
                         </div>
-                        <ButtonMore value="Ver mais..." />
-                    </div>
+                        <div onClick={handleCreateNewTech}>
+                            <ButtonMore id="MoreTechs" disabled={isButtonDisabled} value="Ver mais..." />
+                        </div>
+                    </div>  
                 </aside>
-
-                <section>
-                    <div className={styles.about__me}>
-                        <div className={styles.about__meHeader}>
-                            <h1>Sobre mim</h1>
-                            <div className={styles.profile__Line}></div>
-                        </div>
-                        <div className={styles.about__meResume}>
-                            <p>{jsonData.resume}</p>
-                            <p>{jsonData.resume}</p>
-                        </div>
-                    </div>
-
-                    <div className={styles.about__card}>
-                        {jsonData.aboutMe.map((card, index) => (
-                            <div key={index} className={styles.about__cardS}>
-                                <div className={styles.about__cardSHeader}>
-                                    <img src={jsonData.aboutMe[index].icon} alt="Simbolos padrão para representar código web" />
-                                    <h2>{jsonData.aboutMe[index].title}</h2>
-                                </div>
-                                <p>{jsonData.aboutMe[index].description}</p>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className={styles.projects}>
-                        <div className={styles.about__meHeader} >
-                            <h1>Últimos projetos e destaques</h1>
-                            <div className={styles.profile__Line}></div>
-                        </div>
-
-                        <div className={styles.projectDiv}>
-                            <div className={styles.project}>
-                                {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
-                                <h2>TITLE PROJECT</h2>
-                                <img src={bgHeader} alt="" />
-                                <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
-                            </div>
-                            <div className={styles.project}>
-                                {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
-                                <h2>TITLE PROJECT</h2>
-                                <img src={bgHeader} alt="" />
-                                <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
-                            </div>
-                            <div className={styles.project}>
-                                {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
-                                <h2>TITLE PROJECT</h2>
-                                <img src={bgHeader} alt="" />
-                                <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
-                            </div>
-                            <div className={styles.project}>
-                                {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
-                                <h2>TITLE PROJECT</h2>
-                                <img src={bgHeader} alt="" />
-                                <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
-                            </div>
-                            <div className={styles.project}>
-                                {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
-                                <h2>TITLE PROJECT</h2>
-                                <img src={bgHeader} alt="" />
-                                <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
-                            </div>
-                        </div>
-                        <ButtonMore value="Ver mais..." />
-                    </div>
-                </section>
+                <Section />
             </div>
         </main>
     )

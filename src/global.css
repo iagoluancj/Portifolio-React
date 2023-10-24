@@ -22,6 +22,7 @@
     );
 
     scroll-behavior: smooth;
+    scroll-padding: 17rem;
 }
 
 ::-webkit-scrollbar {
@@ -71,6 +72,7 @@ ul  {
 img {
     max-width: 100%;
 }
+
 :focus {
     outline: transparent;
     box-shadow: 0 0 0 2px var(--gradient-Roxo);
@@ -81,3 +83,21 @@ img {
         font-size: 87,5%;
     }
 }
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+#Contact,#Project,#Techs,#About:target {
+    animation: blink 1s; /* Define a duração da animação (1 segundo neste exemplo) */
+}
+
+#Project:target {
+    animation: blink 1s; /* Define a duração da animação (1 segundo neste exemplo) */
+}
+
+#Techs:target {
+    animation: blink 1s; /* Define a duração da animação (1 segundo neste exemplo) */
+}
+

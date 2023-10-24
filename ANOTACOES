@@ -5,4 +5,40 @@ Com base em cada parametro ela irá realizar a busca e retornar conforme está n
 Criar função(ELEMENTO REACT) que renderize no HTML. 
 */
 
-teste
+// Flow projects. 
+/*
+O projeto terá o TITLE, uma imagem ilustrativa que precisara´ser feita por alguem que saiba, tem que ser uma imagem bonita para chamar atenção.
+Ao passar o mouse por cima deve aparecer background com a cor de funda da imagem e destacar o titulo no meio.
+
+Ao clicar no projeto será encaminahdo para o readme.md onde terá um pequeno estudo de caso e explicação de desnmvolvimento.
+No final será adcionado link para o estudo de caso completo. 
+
+Para aplicaçoes sem estudo de caso será direcionado somente ao readme.
+Para projetos sem parte de deenvolvimento será aberto uma nova guia com pequeno resumo do estudo de caso e um link para o PPRT completo.
+*/
+
+//Estilização
+/* 
+Ao abrir a pagina os card de "About me" devem carregar como os cards do portifolio WebFlow. 
+
+Desativar hovers nas resoluções menores (resoluções de mobile.)
+
+Adicionar botão "Mágica" onde fará algo com integração ao lang chain; 
+*/
+
+// PRIORITY 
+/* 
+-----------RESOLVED-------------
+Desabilitar botão ao carregar tudo
+--------------------------------
+
+---------EM ANDAMENTO-----------
+Adicionar todas media queries em um unico arquivo.
+--------------------------------
+
+P1 - 
+P2 - 
+P3 - 
+*/
+
+--------

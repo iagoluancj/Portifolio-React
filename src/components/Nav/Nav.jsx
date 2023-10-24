@@ -17,10 +17,10 @@ function Nav() {
             
             <div className={styles.nav__Options}>
                 <div className={styles.nav__OptionsSDiv}>
-                    <a href="" className={styles.nav__Options_Button}>Projects</a>
-                    <a href="" className={styles.nav__Options_Button}>Techs</a>
-                    <a href="" className={styles.nav__Options_Button}>Contact</a>
-                    <a href="" className={styles.nav__Options_Button}>About me</a>
+                    <a href="#Project" className={styles.nav__Options_Button}>Projects</a>
+                    <a href="#Techs" className={styles.nav__Options_Button}>Techs</a>
+                    <a href="#Contact" className={styles.nav__Options_Button}>Contact</a>
+                    <a href="#About" className={styles.nav__Options_Button}>About me</a>
                 </div>
                 <div id={styles.nav__menuBurguer} onClick={openMenu()}><IoMenu size={40}/></div>
                 <div className={`${styles.nav__Options_Button} ${styles.acessibility}`}></div>
