@@ -2,37 +2,52 @@ import ButtonMore from "../../ButtonMore/ButtonMore"
 import styles from './Section.module.css'
 
 import jsonData from '../../../assets/profile.json'
-import bgHeader from '../../../assets/img/bgHeader.png'
-
+import { useEffect, useState } from "react";
+import profileJson from '../../../assets/profile.json'
 
 function Section() {
+    const [projects, setProjects] = useState([]);
+    const [moreProjects, setMoreProjects] = useState(5)
+    const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+
+    const favorites = ['coffeeDelivery', 'design-system', 'toDo-list']
+
+    function capitalizeFirstLetter(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+
+    useEffect(() => {
+        handleProjects();
+    }, [moreProjects]);
 
     function handleProjects() {
         fetch(`https://api.github.com/users/iagoluancj/repos?type=public&sort=updated`)
-            .then(response => {
+            .then((response) => {
                 if (!response.ok) {
                     throw new Error('Erro na solicitação da API do GitHub');
                 }
                 return response.json();
             })
-            .then(data => {
-                // Ordena os projetos por data de atualização em ordem decrescente
+            .then((data) => {
                 const repositoriosOrdenados = data.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+                const lastProjects = repositoriosOrdenados.slice(0, moreProjects);
+                const favoriteProjects = favorites.map(favoriteName => lastProjects.find(project => project.name === favoriteName)).filter(Boolean);
+                const otherProjects = lastProjects.filter(project => !favorites.includes(project.name));
+                const allProjects = [...favoriteProjects, ...otherProjects];
 
-                // Seleciona apenas os últimos 5 projetos
-                const ultimos5Projetos = repositoriosOrdenados.slice(0, 5);
-
-                // Exibe os últimos 5 projetos atualizados no console
-                console.log('Últimos 5 projetos atualizados:');
-                for (const repo of ultimos5Projetos) {
-                    console.log(`Nome do repositório: ${repo.name}`);
-                    console.log(`Data de atualização: ${repo.updated_at}`);
-                    console.log('---');
-                }
+                setProjects(allProjects);
             })
-            .catch(error => {
+            .catch((error) => {
                 console.error(error);
             });
+    }
+
+    function handleMoreProjects() {
+        if (moreProjects < 9) {
+            setMoreProjects(moreProjects => moreProjects + 1);
+        } else {
+            setIsButtonDisabled(true);
+        }
     }
 
     return (
@@ -67,39 +82,30 @@ function Section() {
                 </div>
 
                 <div className={styles.projectDiv}>
-                    <div className={styles.project}>
-                        {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
-                        <h2>TITLE PROJECT</h2>
-                        <p>Publicado há 12 dias.</p>
-                        <img src={bgHeader} alt="" />
-                        <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
-                    </div>
-                    <div className={styles.project}>
-                        {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
-                        <h2>TITLE PROJECT</h2>
-                        <img src={bgHeader} alt="" />
-                        <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
-                    </div>
-                    <div className={styles.project}>
-                        {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
-                        <h2>TITLE PROJECT</h2>
-                        <img src={bgHeader} alt="" />
-                        <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
-                    </div>
-                    <div className={styles.project}>
-                        {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
-                        <h2>TITLE PROJECT</h2>
-                        <img src={bgHeader} alt="" />
-                        <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
-                    </div>
-                    <div className={styles.project}>
-                        {/* Criar codigo para buscar projetos no GITHUB e com base no nome puxar uma imagem thumb salva localmente.  */}
-                        <h2>TITLE PROJECT</h2>
-                        <img src={bgHeader} alt="" />
-                        <p>{`It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of istribution of letters, as opp use `}</p>
-                    </div>
+                    {projects.map((project, index) => (
+                        <div key={index} className={styles.project}>
+                            {favorites.includes(project.name) && (
+                                <span className={styles.favoriteIcon}>★</span>
+                            )}
+                            <a href={project.html_url} target="_blank" rel="noopener noreferrer">
+                                <h2>{capitalizeFirstLetter(project.name)}</h2>
+                                <div className={styles.thumbProject}>
+                                    {profileJson.projectsIMGS.map((projectImg, imgIndex) => (
+                                        project.name === projectImg.nameProject && (
+                                            <img
+                                                key={imgIndex}
+                                                src={projectImg.url}
+                                                alt={`Thumbnail de ${project.name}`}
+                                            />
+                                        )
+                                    ))}
+                                </div>
+                                <p>{`Publicado há ${Math.floor((new Date() - new Date(project.updated_at)) / (1000 * 60 * 60 * 24))} dias.`}</p>
+                            </a>
+                        </div>
+                    ))}
                 </div>
-                <button onClick={handleProjects}><ButtonMore  value="Ver mais..." ></ButtonMore></button>
+                <button onClick={handleMoreProjects}><ButtonMore value="Ver mais..." disabled={isButtonDisabled}></ButtonMore></button>
             </div>
         </section>
     )

@@ -12,14 +12,14 @@
     border-radius: 10px;
     box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
-    transition: 0.5s;
+    transition: 0.2s;
 
     font-family: Roboto;
 }
 
 .buttonMoreView:hover {
     transform: scale(1.1);
-    transition: 0.5s;
+    transition: .2s;
     cursor: pointer;
 }
 

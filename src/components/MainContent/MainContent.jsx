@@ -2,11 +2,11 @@ import styles from './MainContent.module.css'
 import jsonData from '../../assets/profile.json'
 
 import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
-import email from '../../assets/img/email.png'
-import location from '../../assets/img/location.png'
-import skills from '../../assets/img/skills.png'
-import tel from '../../assets/img/tel.png'
-import user from '../../assets/img/user.png'
+import email from '../../assets/img/emailWhite.png'
+import location from '../../assets/img/locationWhite.png'
+import skills from '../../assets/img/skillsWhite.png'
+import tel from '../../assets/img/callWhite.png'
+import user from '../../assets/img/userWhite.png'
 
 import { useState } from 'react';
 
@@ -15,7 +15,7 @@ import Section from './section/section';
 
 function MainContent() {
     const [techs, setTechs] = useState([
-        1, 2, 3
+        1, 2, 3, 4, 5
     ])  
     const [isButtonDisabled, setIsButtonDisabled] = useState(false);
     function handleCreateNewTech() {
@@ -88,7 +88,7 @@ function MainContent() {
                                     ))}
                                 </ul>
                             </div>
-                            <ButtonMore value="Curriculo completo" href="https://drive.google.com/file/d/18k7nZUdDBIYyoWFdmshH3YzsOWgUmYAl/view?usp=sharing" />
+                            <ButtonMore className={styles.buttonCurriculo} value="Curriculo completo" href="https://drive.google.com/file/d/18k7nZUdDBIYyoWFdmshH3YzsOWgUmYAl/view?usp=sharing" />
                         </div>
                     </div>
 

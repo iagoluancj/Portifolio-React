@@ -1,7 +1,7 @@
 section {
     margin: 1rem;
     border-radius: 4px;
-    background: #402358;
+    background: #240241;
 
     padding: 2rem 3rem 0rem 3rem;
 }
@@ -31,10 +31,6 @@ section button {
     border: 0;
     padding: 0;
 }
-
-/* section {
-    height: 1900px;
-} */
 
 .about__me {
     display: flex;
@@ -85,7 +81,7 @@ section button {
     margin: 0rem 1rem;
     max-width: 300px;
 
-    background-color: var(--Gray-2c2c2c);
+    background-color: #402358;
     border-radius: 10px;
     box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
 }
@@ -134,18 +130,32 @@ section button {
     justify-items: center;
 }
 
-.project {
+.project a{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     
     width: 260px;
     height: 400px;
 
     border-radius: 10px;
-    background: #D9D9D9;
+    background: #402358;
     box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.thumbProject {
+    max-width: calc(100% - 20px); 
+    max-height: calc(100% - 100px); 
+    display: flex;
+    justify-content: center;
+
+    img {
+        border-radius: 10px;
+        box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+    }
 }
 
 .about__cardS {
@@ -161,6 +171,20 @@ section button {
 
     border-radius: 0rem 0rem 10rem 10rem;
 }
+
+.favoriteIcon {
+    position: relative;
+    top: 10px;
+    right: 10px;
+    display: inline-block; /* Adicionado para garantir que a estrela não quebre para uma nova linha */
+    line-height: 1; /* Ajuste a altura da linha para centralizar a estrela verticalmente */
+    background-color: #402358; /* Cor de destaque para a tag ou ícone */
+    color: #ffcc00 ; /* Cor do texto ou ícone */
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+  }
 
 /* @media (min-width: 1500px) {
     section {
@@ -240,15 +264,3 @@ section button {
         width: 300px;
     }
 }
-
-@keyframes moveUp {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(-5px); 
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }

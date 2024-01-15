@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import '../src/global.css'
-import '../src/mediaQueries.css' // OLHAR ISO AQQQQQQQQQQQQQQQQQQQQQ
 
 import Nav from './components/Nav/Nav.jsx'
 import Header from './components/Header/Header.jsx'

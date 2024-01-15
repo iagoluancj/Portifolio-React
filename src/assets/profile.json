@@ -15,53 +15,53 @@
   "skills": {
     "hardSkills": [
       {
-        "name": "HTML5",
-        "level": "Intermédiario",
-        "logo": "https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
-        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
-      },
-      {
-        "name": "CSS3",
-        "level": "Avançado",
-        "logo": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png",
-        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
-      },
-      {
-        "name": "React",
-        "level": "Avançado",
-        "logo": "https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_logo_icon_146374.png",
-        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
-      },
-      {
-        "name": "React",
-        "level": "Avançado",
-        "logo": "https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_logo_icon_146374.png",
-        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
-      },
-      {
         "name": "JavaScript",
-        "level": "Avançado",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/mongodb.png",
+        "level": "Intermédiario",
+        "logo": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_js_icon_130510.png",
         "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
       },
       {
         "name": "Figma",
+        "level": "Intermédiario",
+        "logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/figma_logo_icon_170157.png",
+        "description": "Consigo com facilididade criar projetos no figma e ler os demais propostos"
+      },
+      {
+        "name": "React",
+        "level": "Básico",
+        "logo": "https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_logo_icon_146374.png",
+        "description": "Conhecimento básico quase intermidario sobre o react, consigo facilmente criar projetos com o mesmo."
+      },
+      {
+        "name": "NextJS",
+        "level": "Básico",
+        "logo": "https://cdn.icon-icons.com/icons2/3392/PNG/512/nextjs_icon_213852.png",
+        "description": "Iniciando com NEXTJS, possuo as noçoes inicias e consigo criar algumas paginas simples"
+      },
+      {
+        "name": "HTML5",
         "level": "Avançado",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
-        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+        "logo": "https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
+        "description": "Solídos conhecimentos em HTML5 com sua estruturação e tags"
+      },
+      {
+        "name": "CSS3",
+        "level": "Intermédiario",
+        "logo": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png",
+        "description": "Conhecimento intermédiario sobre o CSS, mas possuo uma excelente solidez e noção de como utilzia-lo"
       },
       {
         "name": "LangChain",
-        "level": "Avançado",
+        "level": "Básico",
         "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
-        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+        "description": "Loading..."
       }
     ],
     "competencias": [
-      "Inglês intermediário",
+      "Analise e desenvolvimento de sistemas - Unopar (Em andamento)",
       "UX Google Certificate - Coursera (Concluido)",
-      "Cursando ADS - Instituição",
-      "Técnico em informática e desenvolvimento de sistemas."
+      "Curso Técnico em informática (Concluido).",
+      "Inglês intermediário"
     ]
   },
   "languages": [
@@ -100,17 +100,55 @@
     {
       "title": "Developing from start to finish",
       "description": "Nos projetos mostrado no portfolio abaixo há uma gama diversificada de plataformas visadas e tecnologias utilizadas na construção dos mesmos, em alguns eu desenvolvi o projeto desde a criação de empatia com o usuário até o desenvolvimento. Em outros eu fiz somente uma dessas partes, algumas das ferramentas usadas foram o HTML5, CSS3, JavaScript, Figma e entre outras.",
-      "icon": "https://s3-alpha-sig.figma.com/img/ef82/44ca/810fc6404557519ed1c15a982290f2f9?Expires=1698624000&Signature=LVtw3z~Ts82mx-Ja56T0ai7RPXTPA-7~pXMq18NgMIoeA4mwAlMwre94tc9bkvugcebqk-n-a6IcZWPv-WlbRE8lZ7FDyhjUsLO04mPke2Dys~1gyxqpBDLhTpKsWxHrh~zSvZTrC5-lX~EIACRwLGVqLGGpoAcznTJGLdPTUnZSQYStCcJi884JW9gOfmx-btGdwoS98MKtEaJdTmr3c3Kg5jAKueOffawRIp8WrQCo3qGpvK3H-zRQPrrkzUfYpHiGG9aF3ELElkR3AEtK7ojccllUDjEx62UVuPeymzq6CT6g1vm0RlK8BYVsTHFCmXjqDzRbhRCMQDqP2V-kNA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "icon": "https://cdn.icon-icons.com/icons2/2216/PNG/512/augmented_reality_computer_developer_coding_programming_icon_134238.png"
     },
     {
       "title": "Focus on the best for the user",
       "description": "Comecei meus estudos em desenvolvimento e me encontrei de verdade no UI/UX, fiquei em dúvida de qual lado seguir pois apesar da preferencia pelo UI/UX eu ainda era fascinado pelo desenvolvimento e foi então onde eu vi uma oportunidade de implementar os dois, vi que não era uma limitação mas sim uma perfeita conjunção. Com isso pude ver situações onde UX e DEV interagem de forma primorosa para fazer o melhor para o usuário.",
-      "icon": "https://s3-alpha-sig.figma.com/img/805e/a180/6ea94e2c7070cfae4691623b5f010580?Expires=1698624000&Signature=L5TDoePpiQ9hHfLHH0Z~RHcsqBvsxRhz76trIDmhwq6xHnwObwBUQZgZLqmdXHZUQG8kOisM2pbXXaoFWFB6Yw3L7dELf2dAupSr2mxm1dwq785QjLdUgSXqEtII~aMIGRWJQd9OhQ6-D13eF34D7uN4O73BXo8OfWq6Qsd8Uhyk~AuWC6Xt0XZPGoQt28hYFRgL5afMye8P7O5o85t7iPS~bxNs7vis7gFQ1RUbkvBToY8lXaSNi6vpSDXDHKqgfPAIcmQSlnnsv0k4XiVg9XNauLZPuj-KirMP9U9-8ENbDaQpImAG11liql8dabd6gxjDrDiaeFjozStnPh7LTg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "icon": "https://cdn.icon-icons.com/icons2/1485/PNG/512/cv_102350.png"
     },
     {
       "title": "Accessibility and equity for all",
       "description": "Digo com humildade que oque aprendi nessa minha carga de conhecimento que tanto desenvolvimento quanto a experiência do usuário quando é focada na acessibilidade é algo que podemos ver apenas vantagens, seja esse foco no auxilio de deficiências permanentes ou temporárias, os benefícios de ferramentas adaptadas a isso é um melhor uso para todos tipos de usuários.",
-      "icon": "https://s3-alpha-sig.figma.com/img/8575/85b7/357c39169748143dbd564bd51a9f49f6?Expires=1698624000&Signature=mfOFvDFUcxTHSTDVvFEP0PinouZlHwxzlti0JD~PzyyGdxIExgJ23v3~cRu2stri6XiZlMqpxTokSnki9YPjIo1nA1t3JWsJS5m9on1ukui2QoFKN9EeNm9HTkZdUFWPIb3VDvtuvcEgYj3TgbV87rduzCcDNvJr78-VeMWnMEz7IS~BlCb0NWm2LdmyKYwEc1nK-MnJnr5y1-g3Eb9Bq1Se8avvS7sHJQfeZ6wWo7TgO4Z6fYfRg0orPGe2PJaqg~n4K2aqWjXt9QS8sM7k~M5P7gJYREJSncoZf8X77AG54VPS5wpZgoUC~YdAF6hxWk4LWV1YQr5tdB73eFRSrw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+      "icon": "https://cdn.icon-icons.com/icons2/2562/PNG/512/ui_ux_web_design_multidevice_responsive_layout_icon_153182.png"
+    }
+  ],
+  "projectsIMGS": [
+    {
+      "nameProject": "design-system",
+      "url": "/Portifolio-React/src/assets/img/storyBook.PNG",
+      "url1": "/Portifolio-React/src/assets/img/storyBook1.PNG",
+      "url2": "/Portifolio-React/src/assets/img/storyBook2.PNG"
+    },
+    {
+      "nameProject": "ignite-shop",
+      "url": "/Portifolio-React/src/assets/img/igniteShop.PNG",
+      "url1": "/Portifolio-React/src/assets/img/igniteShop1.PNG",
+      "url2": "/Portifolio-React/src/assets/img/igniteShop2.PNG"
+    },
+    {
+      "nameProject": "coffeeDelivery",
+      "url": "/Portifolio-React/src/assets/img/coffeDelivery.PNG",
+      "url1": "/Portifolio-React/src/assets/img/coffeDelivery1.PNG",
+      "url2": "/Portifolio-React/src/assets/img/coffeDelivery2.PNG"
+    },
+    {
+      "nameProject": "toDo-list",
+      "url": "/Portifolio-React/src/assets/img/todoList.PNG",
+      "url1": "/Portifolio-React/src/assets/img/todoList1.PNG",
+      "url2": "/Portifolio-React/src/assets/img/todoList2.PNG"
+    },
+    {
+      "nameProject": "Portifolio-React",
+      "url": "/Portifolio-React/src/assets/img/portfolio.jpg",
+      "url1": "/Portifolio-React/src/assets/img/portfolio1.jpg",
+      "url2": "/Portifolio-React/src/assets/img/portfolio2.jpg"
+    },
+    {
+      "nameProject": "pokedex",
+      "url": "/Portifolio-React/src/assets/img/pokedex.PNG",
+      "url1": "/Portifolio-React/src/assets/img/pokedex1.PNG",
+      "url2": "/Portifolio-React/src/assets/img/pokedex2.PNG"
     }
   ]
 }
