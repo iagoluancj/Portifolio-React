@@ -1,7 +1,7 @@
 {
   "name": "Iago Luan da Cruz de Jesus",
   "photo": "https://avatars.githubusercontent.com/u/86308522?s=400&u=fd638dd57484d6323c33036cfcf726cfa8d693b1&v=4",
-  "occupation": "Front-end developer & UX Desginer",
+  "occupation": "Frontend developer & UX Desginer",
   "location": "Belo horizonte - MG",
   "phone": "+55 (31) 9 9882-9940",
   "email": "iago.luancj@gmail.com",
@@ -11,57 +11,58 @@
     "linkedin": "https://www.linkedin.com/in/iago-luan-4b4b02220/",
     "instagram": "https://www.instagram.com/iago.luancj/"
   },
-  "resume": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use",
+  "resume": "Me chamo Iago, tenho 23 anos e sou apaixonado por tecnologia desde criança. Após a adolescência, descobri também a paixão pela psicologia, buscando entender o porquê as pessoas são como são. Sou amante de astronomia e um ávido fã de ficção científica. Nas horas vagas um jogador mediano. No mais, é isso, se resumir em pouco mais de 2000 caracteres não é exatamente a melhor forma, mas é o inicio da nossa conversa.",
+  "resume1": "Possuo uma boa análise da experiência do usuário (UX) devido a experiências anteriores com contato direto a usuários finais e colaboradores. Tenho também como parte essencial de meu curriculo boas habilidades em desenvolvimento web, onde transformamos ideias em realidade para atender às necessidades do usuário. Abaixo, há um pouco mais sobre minhas habilidades técnicas.",
   "skills": {
     "hardSkills": [
       {
         "name": "JavaScript",
         "level": "Intermédiario",
         "logo": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_js_icon_130510.png",
-        "description": "lorem impsum sit amet get sei la oque eu devo escrever aqui."
+        "description": "Tenho uma base sólida com JS, o que me permite produzir resultados satisfatórios com os recursos disponíveis."
       },
       {
         "name": "Figma",
         "level": "Intermédiario",
         "logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/figma_logo_icon_170157.png",
-        "description": "Consigo com facilididade criar projetos no figma e ler os demais propostos"
+        "description": "Consigo criar projetos de UX/UI no Figma e compreender outros projetos propostos com facilidade."
+      },
+      {
+        "name": "Typescript",
+        "level": "Básico",
+        "logo": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png",
+        "description": "Tenho conhecimentos que variam de básicos a intermediários em TS, abrangendo uma boa compreensão do seu uso."
       },
       {
         "name": "React",
         "level": "Básico",
         "logo": "https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_logo_icon_146374.png",
-        "description": "Conhecimento básico quase intermidario sobre o react, consigo facilmente criar projetos com o mesmo."
+        "description": "Tenho conhecimento básico a quase intermediário em React, sendo capaz de criar projetos com facilidade."
       },
       {
         "name": "NextJS",
         "level": "Básico",
         "logo": "https://cdn.icon-icons.com/icons2/3392/PNG/512/nextjs_icon_213852.png",
-        "description": "Iniciando com NEXTJS, possuo as noçoes inicias e consigo criar algumas paginas simples"
+        "description": "Iniciando com NEXTJS, tenho noções iniciais e consigo criar algumas páginas simples."
       },
       {
         "name": "HTML5",
         "level": "Avançado",
         "logo": "https://cdn.icon-icons.com/icons2/1488/PNG/512/5352-html5_102567.png",
-        "description": "Solídos conhecimentos em HTML5 com sua estruturação e tags"
+        "description": "Sólidos conhecimentos em HTML5, como estruturação sintática e tags."
       },
       {
         "name": "CSS3",
         "level": "Intermédiario",
         "logo": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png",
-        "description": "Conhecimento intermédiario sobre o CSS, mas possuo uma excelente solidez e noção de como utilzia-lo"
-      },
-      {
-        "name": "LangChain",
-        "level": "Básico",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
-        "description": "Loading..."
+        "description": "Conhecimento intermediário em CSS3 devido à sua extensão, porém possuo excelente habilidade para utilizá-lo"
       }
     ],
     "competencias": [
-      "Analise e desenvolvimento de sistemas - Unopar (Em andamento)",
-      "UX Google Certificate - Coursera (Concluido)",
-      "Curso Técnico em informática (Concluido).",
-      "Inglês intermediário"
+      "Analysis and Systems Development - Unopar (In progress)",
+      "UX Google Certificate - Coursera (Completed)",
+      "Technical Course in Computer Science (Completed)",
+      "Intermediate English"
     ]
   },
   "languages": [
@@ -99,12 +100,12 @@
   "aboutMe": [
     {
       "title": "Developing from start to finish",
-      "description": "Nos projetos mostrado no portfolio abaixo há uma gama diversificada de plataformas visadas e tecnologias utilizadas na construção dos mesmos, em alguns eu desenvolvi o projeto desde a criação de empatia com o usuário até o desenvolvimento. Em outros eu fiz somente uma dessas partes, algumas das ferramentas usadas foram o HTML5, CSS3, JavaScript, Figma e entre outras.",
-      "icon": "https://cdn.icon-icons.com/icons2/2216/PNG/512/augmented_reality_computer_developer_coding_programming_icon_134238.png"
+      "description": "Nos projetos apresentados no portfólio abaixo, há uma ampla variedade de plataformas visadas e tecnologias utilizadas em sua construção. Em alguns, desenvolvi o projeto desde a criação de empatia com o usuário até o desenvolvimento final. Em outros, contribuí apenas em partes específicas. Algumas das ferramentas e linguagens utilizadas incluem HTML5, CSS3, JavaScript, Figma, entre outras.",
+      "icon": "https://cdn.icon-icons.com/icons2/3951/PNG/512/developer_software_icon_251042.png"
     },
     {
       "title": "Focus on the best for the user",
-      "description": "Comecei meus estudos em desenvolvimento e me encontrei de verdade no UI/UX, fiquei em dúvida de qual lado seguir pois apesar da preferencia pelo UI/UX eu ainda era fascinado pelo desenvolvimento e foi então onde eu vi uma oportunidade de implementar os dois, vi que não era uma limitação mas sim uma perfeita conjunção. Com isso pude ver situações onde UX e DEV interagem de forma primorosa para fazer o melhor para o usuário.",
+      "description": "Comecei meus estudos em desenvolvimento e descobri minha verdadeira paixão no campo de UI/UX. Fiquei indeciso sobre qual caminho seguir, pois, apesar da preferência pelo UI/UX, ainda era fascinado por programar. Foi então que percebi uma oportunidade de integrar ambos. Entendi que não era uma limitação, mas sim uma combinação perfeita. Com isso, pude observar situações em que UX e DEV interagem de maneira primorosa para proporcionar a melhor experiência ao usuário",
       "icon": "https://cdn.icon-icons.com/icons2/1485/PNG/512/cv_102350.png"
     },
     {
@@ -116,7 +117,7 @@
   "projectsIMGS": [
     {
       "nameProject": "design-system",
-      "url": "/Portifolio-React/src/assets/img/storyBook.PNG",
+      "url": "../assets/img/storyBook.PNG",
       "url1": "/Portifolio-React/src/assets/img/storyBook1.PNG",
       "url2": "/Portifolio-React/src/assets/img/storyBook2.PNG"
     },

@@ -54,12 +54,12 @@ function Section() {
         <section>
             <div id="About" className={styles.about__me}>
                 <div className={styles.about__meHeader}>
-                    <h1>Sobre mim</h1>
+                    <h1>About me</h1>
                     <div className={styles.profile__Line}></div>
                 </div>
                 <div className={styles.about__meResume}>
                     <p>{jsonData.resume}</p>
-                    <p>{jsonData.resume}</p>
+                    <p>{jsonData.resume1}</p>
                 </div>
             </div>
 
@@ -77,10 +77,10 @@ function Section() {
 
             <div id="Project" className={styles.projects}>
                 <div className={styles.about__meHeader} >
-                    <h1>Últimos projetos e destaques</h1>
+                    <h1>Latest Projects and Highlights</h1>
                     <div className={styles.profile__Line}></div>
                 </div>
-
+                Loading: (Developer projects / UX projects)
                 <div className={styles.projectDiv}>
                     {projects.map((project, index) => (
                         <div key={index} className={styles.project}>
@@ -100,12 +100,12 @@ function Section() {
                                         )
                                     ))}
                                 </div>
-                                <p>{`Publicado há ${Math.floor((new Date() - new Date(project.updated_at)) / (1000 * 60 * 60 * 24))} dias.`}</p>
+                                <p>{`Published ${Math.floor((new Date() - new Date(project.updated_at)) / (1000 * 60 * 60 * 24))} days ago.`}</p>
                             </a>
                         </div>
                     ))}
                 </div>
-                <button onClick={handleMoreProjects}><ButtonMore value="Ver mais..." disabled={isButtonDisabled}></ButtonMore></button>
+                <button onClick={handleMoreProjects}><ButtonMore value="To see more" disabled={isButtonDisabled}></ButtonMore></button>
             </div>
         </section>
     )

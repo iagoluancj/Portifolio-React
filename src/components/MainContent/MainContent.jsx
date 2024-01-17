@@ -44,7 +44,7 @@ function MainContent() {
                             <div className={`${styles.profile__Name} ${styles.profile__InfoGeneralStyle}`}>
                                 <img className={styles.profile__Icon} src={user} alt="" />
                                 <div>
-                                    <div className={styles.profile__InfoTitle}>Nome:</div>
+                                    <div className={styles.profile__InfoTitle}>Name:</div>
                                     <div className={styles.profile__InfoP}>{jsonData.name}</div>
                                     <div className={styles.profile__Line}></div>
                                 </div>
@@ -52,7 +52,7 @@ function MainContent() {
                             <div className={styles.profile__InfoGeneralStyle}>
                                 <img className={styles.profile__Icon} src={tel} alt="" />
                                 <div>
-                                    <div className={styles.profile__InfoTitle}>Telefone: </div>
+                                    <div className={styles.profile__InfoTitle}>Phone: </div>
                                     <div className={styles.profile__InfoP}>{jsonData.phone}</div>
                                     <div className={styles.profile__Line}></div>
                                 </div>
@@ -60,7 +60,7 @@ function MainContent() {
                             <div className={styles.profile__InfoGeneralStyle}>
                                 <img className={styles.profile__Icon} src={email} alt="" />
                                 <div>
-                                    <div className={styles.profile__InfoTitle}>Email: </div>
+                                    <div className={styles.profile__InfoTitle}>E-mail: </div>
                                     <div className={styles.profile__InfoP}>{jsonData.email} </div>
                                     <div className={styles.profile__Line}></div>
                                 </div>
@@ -77,7 +77,7 @@ function MainContent() {
                             <div className={styles.profile__Skills}>
                                 <div className={styles.profile__Title_Skills}>
                                     <img className={styles.profile__Icon} src={skills} alt="" />
-                                    <h2 className={styles.profile__InfoP} >Skills:</h2>
+                                    <h2 className={styles.profile__InfoP}>Education:</h2>
                                 </div>
                                 <ul>
                                     {jsonData.skills.competencias.slice(0, 5).map((competencia, index) => (
@@ -88,12 +88,12 @@ function MainContent() {
                                     ))}
                                 </ul>
                             </div>
-                            <ButtonMore className={styles.buttonCurriculo} value="Curriculo completo" href="https://drive.google.com/file/d/18k7nZUdDBIYyoWFdmshH3YzsOWgUmYAl/view?usp=sharing" />
+                            <ButtonMore className={styles.buttonCurriculo} value="Curriculum PDF" href="https://drive.google.com/file/d/18k7nZUdDBIYyoWFdmshH3YzsOWgUmYAl/view?usp=sharing" />
                         </div>
                     </div>
 
                     <div id="Techs" className={styles.profile__Techs}>
-                        <h2>Técnologias e ferramentas</h2>                       
+                        <h2>Technologies and tools</h2>                       
                         <div className={styles.profile__TechsCarrousel}>
                             {jsonData.skills.hardSkills.slice(0, techs.length).map((hardSkills, index) => (
                                 <div key={index} className={styles.profile__TechsOne}>
@@ -110,7 +110,7 @@ function MainContent() {
                             ))}
                         </div>
                         <div onClick={handleCreateNewTech}>
-                            <ButtonMore id="MoreTechs" disabled={isButtonDisabled} value="Ver mais..." />
+                            <ButtonMore id="MoreTechs" disabled={isButtonDisabled} value="To see more" />
                         </div>
                     </div>  
                 </aside>

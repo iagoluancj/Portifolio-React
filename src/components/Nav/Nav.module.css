@@ -82,7 +82,7 @@ nav {
     margin: 0rem 0.5rem;
 
     border-radius: 10px 10px 0px 0px;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.25);
     border: none;
 
     transition: 0.3s;
@@ -101,7 +101,7 @@ nav {
 .acessibilityFather {
     display: flex;
     align-items: center;
-    position: relative; /* Adicione esta linha para posicionar o optionsAcessibility em relação ao acessibilityFather */
+    position: relative;
 
     gap: 1rem;
 
@@ -112,23 +112,12 @@ nav {
     transition: 0.3s;
     border-radius: 7px;
     transition: .2s;
-}
 
-.acessibility {
-    background-image: url(../../assets/img/acessibilityIcon.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    margin-top: -2px;
-
-    width: 1.7rem;
-    height: 1.7rem;
-    transition: .2s;
+    z-index: 3;
 }
 
 .acessibilityFather:hover {
-    padding-left: 300px;
-    cursor: pointer;
+    padding-left: 370px;
     transition: .2s;
 
     border-radius: 10px 10px 0px 0px;
@@ -138,30 +127,89 @@ nav {
     border-image: linear-gradient(to right, #FA5252, #D32476) 0 0 100% 0;
 }
 
+.acessibility {
+    background-image: url(../../assets/img/acessibilityIcon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-top: -2px;
+
+    width: 1.7rem;
+    height: 1.7rem;
+    transition: .2s;
+}
+
 .acessibility:hover {
     transform: scale(1.2);
     transition: .2s;
 }
 
 .optionsAcessibility {
-    display: none; 
-    position: absolute; 
-    top: 100%; 
-    left: 0; 
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
     padding: 1rem;
     align-items: center;
 }
 
+.optionsAcessibility span {
+    color: transparent;
+    margin: 0 .3rem;
+}
+
+.optionsAcessibility a:hover {
+    color: #FA5252;
+}
+
 .acessibilityFather:hover .optionsAcessibility {
-    display: flex; 
-    gap: 1rem;
-    margin-top: -2.76rem;
-    
+    display: flex;
+    gap: .8rem;
+    margin-top: -2.65rem;
+
+    span {
+        color: #fff;
+    }
 }
 
 #nav__menuBurguer {
     display: none;
 }
+
+@media (max-width: 1240px) {
+    .acessibilityFather:hover {
+        padding-left: 90px;
+        padding-bottom: 0px;
+        border-radius: 7px;
+        border: none;
+        transition: .2s;
+    }
+
+    .acessibility:hover {
+        transform: scale(1.1);
+    }
+
+    .optionsAcessibility {
+        display: none;
+        position: absolute;
+        top: 0%;
+        right: 30%;
+        width: 90px;
+        padding: 1.3rem 20px;
+        background-color: #2C2C2C;
+        border-radius: 15px;
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .acessibilityFather:hover .optionsAcessibility {
+        display: flex;
+        gap: 1rem;
+        margin-top: 0;
+    }
+}
+
 
 @media (max-width: 1040px) {
     .nav {
