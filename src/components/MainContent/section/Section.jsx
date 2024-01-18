@@ -3,15 +3,30 @@ import styles from './Section.module.css'
 
 import jsonData from '../../../assets/profile.json'
 import { useEffect, useState } from "react";
-import profileJson from '../../../assets/profile.json'
+
+import coffeeDelivery from '../../../assets/img/coffeDelivery.PNG';
+import portifolioReact from '../../../assets/img/portfolio.jpg';
+import toDoList from '../../../assets/img/todoList.PNG';
+import designSystem from '../../../assets/img/storyBook.PNG';
+import igniteShop from '../../../assets/img/igniteShop.PNG';
+import pokedex from '../../../assets/img/pokedex.PNG';
+
+
 
 function Section() {
     const [projects, setProjects] = useState([]);
     const [moreProjects, setMoreProjects] = useState(5)
     const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
-    const favorites = ['coffeeDelivery', 'design-system', 'toDo-list']
-
+    const favorites = ['coffeeDelivery', 'Portifolio-React', 'toDo-list']
+    const thumbs = {
+        'coffeeDelivery': coffeeDelivery,
+        'Portifolio-React': portifolioReact,
+        'toDo-list': toDoList,
+        'design-system': designSystem,
+        'ignite-shop': igniteShop,
+        'pokedex': pokedex,
+    };
     function capitalizeFirstLetter(str) {
         return str.charAt(0).toUpperCase() + str.slice(1);
     }
@@ -90,15 +105,12 @@ function Section() {
                             <a href={project.html_url} target="_blank" rel="noopener noreferrer">
                                 <h2>{capitalizeFirstLetter(project.name)}</h2>
                                 <div className={styles.thumbProject}>
-                                    {profileJson.projectsIMGS.map((projectImg, imgIndex) => (
-                                        project.name === projectImg.nameProject && (
-                                            <img
-                                                key={imgIndex}
-                                                src={projectImg.url}
-                                                alt={`Thumbnail de ${project.name}`}
-                                            />
-                                        )
-                                    ))}
+                                    {thumbs[project.name] && (
+                                        <img
+                                            src={thumbs[project.name]}
+                                            alt={`Thumbnail de ${project.name}`}
+                                        />
+                                    )}
                                 </div>
                                 <p>{`Published ${Math.floor((new Date() - new Date(project.updated_at)) / (1000 * 60 * 60 * 24))} days ago.`}</p>
                             </a>

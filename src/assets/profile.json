@@ -11,7 +11,7 @@
     "linkedin": "https://www.linkedin.com/in/iago-luan-4b4b02220/",
     "instagram": "https://www.instagram.com/iago.luancj/"
   },
-  "resume": "Me chamo Iago, tenho 23 anos e sou apaixonado por tecnologia desde criança. Após a adolescência, descobri também a paixão pela psicologia, buscando entender o porquê as pessoas são como são. Sou amante de astronomia e um ávido fã de ficção científica. Nas horas vagas um jogador mediano. No mais, é isso, se resumir em pouco mais de 2000 caracteres não é exatamente a melhor forma, mas é o inicio da nossa conversa.",
+  "resume": "Me chamo Iago, tenho 23 anos e sou apaixonado por tecnologia desde criança. Após a adolescência, descobri também a paixão pela psicologia, buscando entender o porquê as pessoas são como são. Sou amante de astronomia e um ávido fã de ficção científica. Nas horas vagas um jogador mediano. No mais, é isso, me resumir em pouco mais de 2000 caracteres não é exatamente a melhor forma de me conhecer, mas é o inicio da nossa conversa.",
   "resume1": "Possuo uma boa análise da experiência do usuário (UX) devido a experiências anteriores com contato direto a usuários finais e colaboradores. Tenho também como parte essencial de meu curriculo boas habilidades em desenvolvimento web, onde transformamos ideias em realidade para atender às necessidades do usuário. Abaixo, há um pouco mais sobre minhas habilidades técnicas.",
   "skills": {
     "hardSkills": [
@@ -44,6 +44,12 @@
         "level": "Básico",
         "logo": "https://cdn.icon-icons.com/icons2/3392/PNG/512/nextjs_icon_213852.png",
         "description": "Iniciando com NEXTJS, tenho noções iniciais e consigo criar algumas páginas simples."
+      },
+      {
+        "name": "SQL",
+        "level": "Básico",
+        "logo": "https://cdn.icon-icons.com/icons2/273/PNG/256/icon_sql_256_30046.png",
+        "description": "Atualmente utilizando no trabalho e me especializando na linguagem."
       },
       {
         "name": "HTML5",

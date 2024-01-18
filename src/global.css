@@ -10,10 +10,8 @@
     --Gray-2c2c2c: #2c2c2c;
     --gradient-Roxo: linear-gradient(
         to right, 
-        #5B0BEE,
         #E12BFF, 
-        #A61CF7, 
-        #5B0BEE
+        #000000
     );
     --gradient-Red: linear-gradient(
         to right, 

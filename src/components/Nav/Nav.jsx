@@ -1,9 +1,16 @@
+import { useState } from 'react';
 import styles from './Nav.module.css'
 
 import { IoMenu } from 'react-icons/io5';
 
 
 function Nav() {
+    const [isMenuOpen, setIsMenuOpen] = useState(true);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <nav>
             <div className={styles.nav}>
@@ -17,13 +24,17 @@ function Nav() {
                     </div>
                 </a>
                 <div className={styles.nav__Options}>
-                    <div className={styles.nav__OptionsSDiv}>
+                    <div className={isMenuOpen ? styles.nav__OptionsSDiv : styles.nav__OptionsSDivHidden}>
                         <a href="#Project" className={styles.nav__Options_Button}>Projects</a>
                         <a href="#Techs" className={styles.nav__Options_Button}>Tech&apos;s</a>
                         <a href="#Contact" className={styles.nav__Options_Button}>Contact</a>
                         <a href="#About" className={styles.nav__Options_Button}>About me</a>
                     </div>
-                    <div id={styles.nav__menuBurguer} onClick={openMenu()}><IoMenu size={40} /></div>
+
+                    <div id={styles.nav__menuBurguer} onClick={toggleMenu}>
+                        <IoMenu size={40} />
+                    </div>
+
                     <div className={`${styles.acessibilityFather}`}>
                         <div className={styles.optionsAcessibility}>
                             <span><a href="google.com" target='_blank'>Screen reader</a></span>
@@ -36,14 +47,6 @@ function Nav() {
             </div>
         </nav>
     )
-}
-
-function openMenu() {
-    // if (nav__menuBurguer.style.display == 'flex') {
-    //     nav__menuBurguer.style.display = 'none'
-    // } else {
-    //     nav__menuBurguer.style.display = 'flex'
-    // }
 }
 
 export default Nav
