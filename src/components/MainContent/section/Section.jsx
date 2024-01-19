@@ -95,9 +95,11 @@ function Section() {
                     <h1>Latest Projects and Highlights</h1>
                     <div className={styles.profile__Line}></div>
                 </div>
-                <div>
-                    Feature in progress: (Developer projects / UX projects)
+                <div className={styles.devUXProjects}>
+                    <div className={styles.devProjects}>Developer Projects</div>
+                    <div className={styles.uxProjects}>UX Projects</div>
                 </div>
+
                 <div className={styles.projectDiv}>
                     {projects.map((project, index) => (
                         <div key={index} className={styles.project}>
