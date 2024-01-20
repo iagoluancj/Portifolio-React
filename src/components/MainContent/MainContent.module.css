@@ -316,7 +316,7 @@ aside img {
 
 @media (max-width: 1040px) {
     main {
-        height: 3760px;
+        height: 100%;
     }
 
     .main__div {
@@ -378,11 +378,13 @@ aside img {
 
 @media (max-width: 700px) {
     aside {
-        max-width: 310px;
+        max-width: 300px;
     }
+}
 
-    main {
-        height: 4200px;
+@media (max-width: 300px) {
+    aside {
+        max-width: 270px;
     }
 }
 

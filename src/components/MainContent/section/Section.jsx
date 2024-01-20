@@ -10,6 +10,7 @@ import toDoList from '../../../assets/img/todoList.PNG';
 import designSystem from '../../../assets/img/storyBook.PNG';
 import igniteShop from '../../../assets/img/igniteShop.PNG';
 import pokedex from '../../../assets/img/pokedex.PNG';
+import UxProjects from "./UxProjects/UxProjects";
 
 
 
@@ -17,6 +18,8 @@ function Section() {
     const [projects, setProjects] = useState([]);
     const [moreProjects, setMoreProjects] = useState(5)
     const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+    const [selectedCategory, setSelectedCategory] = useState("devProjects");
+
 
     const favorites = ['coffeeDelivery', 'Portifolio-React', 'toDo-list']
     const thumbs = {
@@ -65,6 +68,36 @@ function Section() {
         }
     }
 
+    function handleCategoryChange(category) {
+        setSelectedCategory(category);
+    }
+
+    function filterProject(project) {
+        if (project === "devProjects") {
+            return projects.map((project, index) =>
+                <div key={index} className={styles.project}>
+                    {favorites.includes(project.name) && (
+                        <span className={styles.favoriteIcon}>★</span>
+                    )}
+                    <a href={project.html_url} target="_blank" rel="noopener noreferrer">
+                        <h2>{capitalizeFirstLetter(project.name)}</h2>
+                        <div className={styles.thumbProject}>
+                            {thumbs[project.name] && (
+                                <img
+                                    src={thumbs[project.name]}
+                                    alt={`Thumbnail de ${project.name}`}
+                                />
+                            )}
+                        </div>
+                        <p>{`Published ${Math.floor((new Date() - new Date(project.updated_at)) / (1000 * 60 * 60 * 24))} days ago.`}</p>
+                    </a>
+                </div>
+            )
+        } else if (project === "uxProjects") {
+            return <UxProjects />
+        }
+    }
+
     return (
         <section>
             <div id="About" className={styles.about__me}>
@@ -96,32 +129,14 @@ function Section() {
                     <div className={styles.profile__Line}></div>
                 </div>
                 <div className={styles.devUXProjects}>
-                    <div className={styles.devProjects}>Developer Projects</div>
-                    <div className={styles.uxProjects}>UX Projects</div>
+                    <div className={`${styles.devProjects} ${selectedCategory === "devProjects" ? styles.devProjectsClicked : ''}`}
+                        onClick={() => handleCategoryChange("devProjects")}>Developer Projects</div>
+                    <div className={`${styles.uxProjects} ${selectedCategory === "uxProjects" ? styles.uxProjectsClicked : ''}`} onClick={() => handleCategoryChange("uxProjects")}>UX Projects</div>
                 </div>
-
-                <div className={styles.projectDiv}>
-                    {projects.map((project, index) => (
-                        <div key={index} className={styles.project}>
-                            {favorites.includes(project.name) && (
-                                <span className={styles.favoriteIcon}>★</span>
-                            )}
-                            <a href={project.html_url} target="_blank" rel="noopener noreferrer">
-                                <h2>{capitalizeFirstLetter(project.name)}</h2>
-                                <div className={styles.thumbProject}>
-                                    {thumbs[project.name] && (
-                                        <img
-                                            src={thumbs[project.name]}
-                                            alt={`Thumbnail de ${project.name}`}
-                                        />
-                                    )}
-                                </div>
-                                <p>{`Published ${Math.floor((new Date() - new Date(project.updated_at)) / (1000 * 60 * 60 * 24))} days ago.`}</p>
-                            </a>
-                        </div>
-                    ))}
+                <div className={`${selectedCategory === "devProjects" ? styles.projectDiv : ''}`}>
+                    {filterProject(selectedCategory)}
                 </div>
-                <button onClick={handleMoreProjects}><ButtonMore value="To see more" disabled={isButtonDisabled}></ButtonMore></button>
+                <button onClick={handleMoreProjects}><ButtonMore value="To see more" disabled={selectedCategory === "uxProjects" || isButtonDisabled}></ButtonMore></button>
             </div>
         </section>
     )

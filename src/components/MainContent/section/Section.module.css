@@ -213,9 +213,9 @@ section button {
     height: 50px;
     transition: 0.1s;
     border: 1px solid transparent;
-    
+
     cursor: pointer;
-    box-shadow: 0px 8px 4px 2px rgba(0,0,0,.2);
+    box-shadow: 0px 8px 4px 2px rgba(0, 0, 0, .2);
 }
 
 .devProjects {
@@ -239,6 +239,22 @@ section button {
 }
 
 .uxProjects:hover {
+    background-color: #402358;
+    border-bottom: 1px solid #FA5252;
+    transition: 0.1s;
+    padding-left: 2rem;
+    font-size: 18px;
+}
+
+.devProjectsClicked {
+    background-color: #402358;
+    border-bottom: 1px solid #FA5252;
+    transition: 0.1s;
+    padding-left: 2rem;
+    font-size: 18px;
+}
+
+.uxProjectsClicked {
     background-color: #402358;
     border-bottom: 1px solid #FA5252;
     transition: 0.1s;
@@ -318,8 +334,14 @@ section button {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 442px) {
     section {
         width: 300px;
+    }
+}
+
+@media (max-width: 300px) {
+    section {
+        width: 270px;
     }
 }
