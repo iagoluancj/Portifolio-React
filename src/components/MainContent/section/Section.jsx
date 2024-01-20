@@ -89,7 +89,7 @@ function Section() {
                                 />
                             )}
                         </div>
-                        <p>{`Published ${Math.floor((new Date() - new Date(project.updated_at)) / (1000 * 60 * 60 * 24))} days ago.`}</p>
+                        <p>{`Updated ${Math.floor((new Date() - new Date(project.updated_at)) / (1000 * 60 * 60 * 24))} days ago.`}</p>
                     </a>
                 </div>
             )

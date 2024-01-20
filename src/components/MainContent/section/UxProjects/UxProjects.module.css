@@ -60,6 +60,18 @@
 .uxProject__Link {
     font-size: 16px;
     margin: 1rem 0rem;
+    font-weight: 700;
+}
+
+.uxProject__Link {
+    border-bottom: 1px solid #FA5252; /* Adiciona uma borda inferior como sublinhado */
+    color: inherit;
+    line-height: 15px;
+}
+
+
+.uxProject__Link:hover {
+    color: #FA5252;
 }
 
 .uxProject__Describe span {
@@ -113,18 +125,18 @@
 @media (max-width: 1326px) {
     .uxProject__Organization {
         flex-direction: column;
-        
+
     }
 
     .uxProject__Header {
         margin: 0;
     }
 
-    .uxProject__Name {    
+    .uxProject__Name {
         width: unset;
     }
-    
-    .uxProject__Describe p{
+
+    .uxProject__Describe p {
         width: 100%;
     }
 }
@@ -133,5 +145,8 @@
     .uxProject {
         width: 100%;
     }
-    
+
+    .uxProject__Describe {
+        margin-bottom: .5rem;
+    }
 }

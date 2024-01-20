@@ -1,0 +1,84 @@
+{
+    "uxProjects": [
+      {
+        "organization": "CineSnack - All steps",
+        "name": "cinesnack",
+        "link": [
+          { "link": "https://docs.google.com/presentation/d/1YaEhYodvyu_cOkTe9gmCMC23ymOLWg4cxhCAlySDjZQ/edit?usp=sharingy" },
+          { "desc": "Case Study" }
+        ],
+        "role": "UX/UI Designer",
+        "process": [
+          "Competitive Audit Template",
+          "Affinity Diagram",
+          "Empathy Map",
+          "UX Research Study Plan - HI-FI Mockups",
+          "Prioritized Insights",
+          "Insight Identification",
+          "Elevator Pitch",
+          "Research Presentation",
+          "User Journey Map"
+        ],
+        "observation": "First UX project created."
+      },
+      {
+        "organization": "Portfolio React - Wireframe/Mockup",
+        "name": "portfolio",
+        "link": [
+          { "link": "LINK FIGMA" },
+          { "desc": "Mockup Hi-Fi" }
+        ],
+        "role": "Web Developer and UX/UI Designer",
+        "process": [
+          "Created paper wireframes",
+          "Created digital wireframe",
+          "Created Hi-Fi mockup",
+          "Developed the application"
+        ],
+        "observation": "As it was a personally styled portfolio with a clear concept, I opted not to go through empathy and design thinking processes. However, as evident, the result was still very satisfactory"
+      },
+      {
+        "organization": "RCP - Project for Social Welfare - All Steps",
+        "name": "rcp",
+        "link": [
+          { "link": "https://drive.google.com/file/d/1nhFCbVQrwL8FsVvXWLyU-6ZmxxR5snK-/view?usp=drive_link" },
+          { "desc": "Complete project presentation" }
+        ],
+        "role": "UX/UI Designer",
+        "process": [
+          "Competitive Audit Template",
+          "Affinity Diagram",
+          "Empathy Map",
+          "UX Research Study Plan - HI-FI Mockups",
+          "Prioritized Insights",
+          "Insight Identification",
+          "Elevator Pitch",
+          "Research Presentation",
+          "User Journey Map"
+        ],
+        "observation": ""
+      },
+      {
+        "organization": "E-commerce Store - All Steps",
+        "name": "ecommerce",
+        "link": [
+          { "link": "https://www.figma.com/proto/64PHAVsmxhSUIGQkhpXhbJ/SITE-STORE---Projetos-curso-6-google?node-id=77-1187&starting-point-node-id=7%3A1754&show-proto-sidebar=1&mode=design&t=j8ZU6Qa7UjqZQaOP-1" },
+          { "desc": "Mockup Hi-Fi" }
+        ],
+        "role": "UX/UI Designer",
+        "process": [
+          "Competitive Audit Template",
+          "Affinity Diagram",
+          "Empathy Map",
+          "UX Research Study Plan - HI-FI Mockups",
+          "Prioritized Insights",
+          "Insight Identification",
+          "Elevator Pitch",
+          "Research Presentation",
+          "User Journey Map"
+        ],
+        "observation": ""
+      }
+    ]
+  }
+  
