@@ -19,7 +19,7 @@ function Nav() {
                         <div className={styles.nav__ImgLogo}></div>
                         <div className={styles.nav__ImgNameDescribe}>
                             <span className={styles.nav_describeOne}>Iago Jesus</span>
-                            <span className={styles.nav_describeTwo}>UX Engineer</span>
+                            <span className={styles.nav_describeTwo}>UX/Frontend Engineer</span>
                         </div>
                     </div>
                 </a>

@@ -11,7 +11,7 @@ import user from '../../assets/img/userWhite.png'
 import { useState } from 'react';
 
 import ButtonMore from '../ButtonMore/ButtonMore';
-import Section from './section/section';
+import Section from './section/Section';
 
 function MainContent() {
     const [techs, setTechs] = useState([
@@ -88,7 +88,7 @@ function MainContent() {
                                     ))}
                                 </ul>
                             </div>
-                            <ButtonMore className={styles.buttonCurriculo} value="Curriculum PDF" href="https://drive.google.com/file/d/1_JR9uUb9HNS3FV9_d3QfFE2f5mN9GMoz/view?usp=drive_link" />
+                            <ButtonMore className={styles.buttonCurriculo} value="Curriculum PDF" href="https://drive.google.com/file/d/1USCkHd0AUsswsoLOrTbebbqJnzIX0kCL/view?usp=drive_link" />
                         </div>
                     </div>
 

@@ -71,38 +71,6 @@
       "Intermediate English"
     ]
   },
-  "languages": [
-    "Português BR",
-    "Inglês (intermediário)",
-    "Espanhol (intermediário)",
-    "Italiano (iniciante)"
-  ],
-  "portfolio": [
-    {
-      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
-      "url": "https://github.com/RenanJPaula/js-developer-pokedex",
-      "thumb": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
-      "github": true
-    },
-    {
-      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
-      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
-      "thumb": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
-      "github": true
-    },
-    {
-      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
-      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
-      "thumb": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
-      "github": true
-    },
-    {
-      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
-      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
-      "thumb": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png",
-      "github": true
-    }
-  ],
   "aboutMe": [
     {
       "title": "Developing from start to finish",
@@ -118,44 +86,6 @@
       "title": "Accessibility and equity for all",
       "description": "Digo com humildade que oque aprendi nessa minha carga de conhecimento que tanto desenvolvimento quanto a experiência do usuário quando é focada na acessibilidade é algo que podemos ver apenas vantagens, seja esse foco no auxilio de deficiências permanentes ou temporárias, os benefícios de ferramentas adaptadas a isso é um melhor uso para todos tipos de usuários.",
       "icon": "https://cdn.icon-icons.com/icons2/2562/PNG/512/ui_ux_web_design_multidevice_responsive_layout_icon_153182.png"
-    }
-  ],
-  "projectsIMGS": [
-    {
-      "nameProject": "design-system",
-      "url": "../assets/img/storyBook.PNG",
-      "url1": "/Portifolio-React/src/assets/img/storyBook1.PNG",
-      "url2": "/Portifolio-React/src/assets/img/storyBook2.PNG"
-    },
-    {
-      "nameProject": "ignite-shop",
-      "url": "/Portifolio-React/src/assets/img/igniteShop.PNG",
-      "url1": "/Portifolio-React/src/assets/img/igniteShop1.PNG",
-      "url2": "/Portifolio-React/src/assets/img/igniteShop2.PNG"
-    },
-    {
-      "nameProject": "coffeeDelivery",
-      "url": "/Portifolio-React/src/assets/img/coffeDelivery.PNG",
-      "url1": "/Portifolio-React/src/assets/img/coffeDelivery1.PNG",
-      "url2": "/Portifolio-React/src/assets/img/coffeDelivery2.PNG"
-    },
-    {
-      "nameProject": "toDo-list",
-      "url": "/Portifolio-React/src/assets/img/todoList.PNG",
-      "url1": "/Portifolio-React/src/assets/img/todoList1.PNG",
-      "url2": "/Portifolio-React/src/assets/img/todoList2.PNG"
-    },
-    {
-      "nameProject": "Portifolio-React",
-      "url": "/Portifolio-React/src/assets/img/portfolio.jpg",
-      "url1": "/Portifolio-React/src/assets/img/portfolio1.jpg",
-      "url2": "/Portifolio-React/src/assets/img/portfolio2.jpg"
-    },
-    {
-      "nameProject": "pokedex",
-      "url": "/Portifolio-React/src/assets/img/pokedex.PNG",
-      "url1": "/Portifolio-React/src/assets/img/pokedex1.PNG",
-      "url2": "/Portifolio-React/src/assets/img/pokedex2.PNG"
     }
   ]
 }

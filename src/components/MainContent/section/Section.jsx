@@ -5,7 +5,7 @@ import jsonData from '../../../assets/profile.json'
 import { useEffect, useState } from "react";
 
 import coffeeDelivery from '../../../assets/img/coffeDelivery.PNG';
-import portifolioReact from '../../../assets/img/portfolio.jpg';
+import portifolioReact from '../../../assets/img/portfolio.png';
 import toDoList from '../../../assets/img/todoList.PNG';
 import designSystem from '../../../assets/img/storyBook.PNG';
 import igniteShop from '../../../assets/img/igniteShop.PNG';

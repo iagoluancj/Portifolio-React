@@ -44,7 +44,8 @@ function UxProjects() {
                     "Created paper wireframes",
                     "Created digital wireframe",
                     "Created Hi-Fi mockup",
-                    "Developed the application"
+                    "Developed the application",
+                    "Continuous monitoring"
                 ],
                 "observation": "Devido ao estilo pessoal e conceito claro do portfólio, evitei os processos de testes e design thinking. Contudo, o resultado foi melhor que o esperado."
             },
@@ -58,15 +59,12 @@ function UxProjects() {
                 ],
                 "role": "UX/UI Designer",
                 "process": [
-                    "Competitive Audit Template",
-                    "Affinity Diagram",
-                    "Empathy Map",
-                    "UX Research Study Plan - HI-FI Mockups",
+                    "User Persona",
+                    "Low-Fidelity Prototypes",
+                    "Usability Testing",
+                    "Accessibility",
                     "Prioritized Insights",
-                    "Insight Identification",
-                    "Elevator Pitch",
-                    "Research Presentation",
-                    "User Journey Map"
+                    "Performance Metrics",
                 ],
                 "observation": "O projeto onde pude aplicar melhor meus conhecimentos, embora tenha tido limitadas oportunidades de exploração de UI"
             },
@@ -81,14 +79,13 @@ function UxProjects() {
                 "role": "UX/UI Designer",
                 "process": [
                     "Competitive Audit Template",
-                    "Affinity Diagram",
-                    "Empathy Map",
-                    "UX Research Study Plan - HI-FI Mockups",
-                    "Prioritized Insights",
-                    "Insight Identification",
-                    "Elevator Pitch",
-                    "Research Presentation",
-                    "User Journey Map"
+                    "User Persona",
+                    "Wireframes",
+                    "Usability Testing",
+                    "High-Fidelity Prototypes",
+                    "Accessibility Evaluation",
+                    "User Flow Analysis",
+                    "A/B Testing"
                 ],
                 "observation": "Este foi o segundo projeto, aqui tive uma virada de chave"
             }

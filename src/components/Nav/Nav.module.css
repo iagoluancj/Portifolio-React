@@ -235,6 +235,15 @@ nav {
     .nav__OptionsSDiv {
         display: none;
     }
+
+    .nav_describeOne {
+        font-size: 14px;
+    }
+
+    .nav_describeTwo {
+        font-size: 9px;
+    }
+
     .nav__OptionsSDivHidden {
         display: flex;
         flex-direction: column; 
