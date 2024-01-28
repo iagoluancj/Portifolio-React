@@ -29,6 +29,10 @@
     justify-content: flex-end;
 }
 
+.ButtonMore span{
+   font-weight: 500;
+}
+
 /*--------------------------*/
 .buttonDisabled {
     pointer-events: none; /* Impede cliques no botão desativado */

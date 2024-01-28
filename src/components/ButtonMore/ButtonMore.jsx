@@ -6,7 +6,7 @@ function ButtonMore(props) {
     return (
         <div className={styles.ButtonMore}>
             <div className={buttonClasses}>
-                <a href={props.href} rel="noreferrer" target='_blank'><h4>{props.value}</h4></a>
+                <a href={props.href} rel="noreferrer" target='_blank'><span>{props.value}</span></a>
             </div>
         </div>
     )

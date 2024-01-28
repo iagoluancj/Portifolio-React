@@ -36,13 +36,13 @@ function MainContent() {
                         </span>
                         <div className={styles.profile__Occupation}><h4>{jsonData.occupation}</h4></div>
                         <div className={styles.profile__Medias}>
-                            <a href={jsonData.socialMedias.instagram} target='blank'><FaInstagram size={40} /></a>
-                            <a href={jsonData.socialMedias.linkedin} target='blank'><FaLinkedin size={40} /></a>
-                            <a href={jsonData.socialMedias.github} target='blank'><FaGithub size={40} /></a>
+                            <a href={jsonData.socialMedias.instagram} aria-label="Link para o Instagram" target='blank'><FaInstagram size={40} /></a>
+                            <a href={jsonData.socialMedias.linkedin} aria-label="Link para o Linkedin" target='blank'><FaLinkedin size={40} /></a>
+                            <a href={jsonData.socialMedias.github} aria-label="Link para o Github" target='blank'><FaGithub size={40} /></a>
                         </div>
                         <div id="Contact" className={styles.profile__Informations}>
                             <div className={`${styles.profile__Name} ${styles.profile__InfoGeneralStyle}`}>
-                                <img className={styles.profile__Icon} src={user} alt="" />
+                                <img className={styles.profile__Icon} src={user} alt="Ícone de usuário" />
                                 <div>
                                     <div className={styles.profile__InfoTitle}>Name:</div>
                                     <div className={styles.profile__InfoP}>{jsonData.name}</div>
@@ -50,7 +50,7 @@ function MainContent() {
                                 </div>
                             </div>
                             <div className={styles.profile__InfoGeneralStyle}>
-                                <img className={styles.profile__Icon} src={tel} alt="" />
+                                <img className={styles.profile__Icon} src={tel} alt="Telefone: Entre em contato comigo" />
                                 <div>
                                     <div className={styles.profile__InfoTitle}>Phone: </div>
                                     <div className={styles.profile__InfoP}>{jsonData.phone}</div>
@@ -58,7 +58,7 @@ function MainContent() {
                                 </div>
                             </div>
                             <div className={styles.profile__InfoGeneralStyle}>
-                                <img className={styles.profile__Icon} src={email} alt="" />
+                                <img className={styles.profile__Icon} src={email} alt="Ícone de e-mail para contato" />
                                 <div>
                                     <div className={styles.profile__InfoTitle}>E-mail: </div>
                                     <div className={styles.profile__InfoP}>{jsonData.email} </div>
@@ -66,7 +66,7 @@ function MainContent() {
                                 </div>
                             </div>
                             <div className={styles.profile__InfoGeneralStyle}>
-                                <img className={styles.profile__IconLocation} src={location} alt="" />
+                                <img className={styles.profile__IconLocation} src={location} alt="Dados de endereço" />
                                 <div>
                                     <div className={styles.profile__InfoTitle}>Location: </div>
                                     <div className={styles.profile__InfoP}>{jsonData.location} </div>
@@ -76,7 +76,7 @@ function MainContent() {
 
                             <div className={styles.profile__Skills}>
                                 <div className={styles.profile__Title_Skills}>
-                                    <img className={styles.profile__Icon} src={skills} alt="" />
+                                    <img className={styles.profile__Icon} src={skills} alt="Competência" />
                                     <h2 className={styles.profile__InfoP}>Education:</h2>
                                 </div>
                                 <ul>
@@ -103,7 +103,7 @@ function MainContent() {
                                     </div>
                                     <span className={styles.profile__InfoP}>{jsonData.skills.hardSkills[index].level}</span>
                                     <div className={styles.profile__TechsImageAndP}>
-                                        <img src={jsonData.skills.hardSkills[index].logo} alt="" />
+                                        <img src={jsonData.skills.hardSkills[index].logo} alt={`Ícone ${jsonData.skills.hardSkills[index].name}`} />
                                         <p>{jsonData.skills.hardSkills[index].description}</p>
                                     </div>
                                 </div>

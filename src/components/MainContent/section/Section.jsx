@@ -115,7 +115,7 @@ function Section() {
                 {jsonData.aboutMe.map((card, index) => (
                     <div key={index} className={styles.about__cardS}>
                         <div className={styles.about__cardSHeader}>
-                            <img src={jsonData.aboutMe[index].icon} alt="Simbolos padrão para representar código web" />
+                            <img src={jsonData.aboutMe[index].icon} alt={`Ícone representativo do título ${jsonData.aboutMe[index].title}`} />
                             <h2>{jsonData.aboutMe[index].title}</h2>
                         </div>
                         <p>{jsonData.aboutMe[index].description}</p>

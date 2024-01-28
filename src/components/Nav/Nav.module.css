@@ -117,7 +117,7 @@ nav {
 }
 
 .acessibilityFather:hover {
-    padding-left: 370px;
+    padding-left: 280px;
     transition: .2s;
 
     border-radius: 10px 10px 0px 0px;
@@ -178,7 +178,7 @@ nav {
 
 @media (max-width: 1240px) {
     .acessibilityFather:hover {
-        padding-left: 90px;
+        padding-left: 53px;
         padding-bottom: 0px;
         border-radius: 7px;
         border: none;
@@ -192,10 +192,10 @@ nav {
     .optionsAcessibility {
         display: none;
         position: absolute;
-        top: 0%;
-        right: 30%;
+        top: 60%;
+        left: 0%;
         width: 90px;
-        padding: 1.3rem 20px;
+        padding: 1.3rem 1rem 1rem 1rem;
         background-color: #2C2C2C;
         border-radius: 15px;
 

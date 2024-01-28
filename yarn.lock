@@ -397,6 +397,11 @@
     "@types/babel__core" "^7.20.2"
     react-refresh "^0.14.0"
 
+accessibility@^4.5.7:
+  version "4.5.7"
+  resolved "https://registry.npmjs.org/accessibility/-/accessibility-4.5.7.tgz"
+  integrity sha512-aXZY9sLQuVaGxeu8KYiFVXLsjvu+a/52njVCyoI8wuwRTwd4b1mrl2nkzNFEP4S08DqKy2Fzm52stZXWBDH9+g==
+
 acorn-jsx@^5.3.2:
   version "5.3.2"
   resolved "https://registry.npmjs.org/acorn-jsx/-/acorn-jsx-5.3.2.tgz"

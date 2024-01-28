@@ -105,7 +105,7 @@ function UxProjects() {
             {projectsData.uxProjects.map((project, index) => (
                 <div key={index} className={styles.uxProject}>
                     <div className={styles.uxProject__Organization}>
-                        <img src={projectImages[project.name]} alt="" />
+                        <img src={projectImages[project.name]} alt={`Thumbnail do projeto ${project.name}`}/>
                         <div className={styles.uxProject__Header}>
                             <div className={styles.uxProject__Name}>{project.organization}</div>
                             <div className={styles.uxProject__Role}>My role: <span>{project.role}</span></div>
