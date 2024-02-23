@@ -1,7 +1,7 @@
 {
   "name": "Iago Luan da Cruz de Jesus",
   "photo": "https://avatars.githubusercontent.com/u/86308522?s=400&u=fd638dd57484d6323c33036cfcf726cfa8d693b1&v=4",
-  "occupation": "Frontend developer & UX Desginer",
+  "occupation": "UX/Frontend Developer & DevOps",
   "location": "Belo horizonte - MG",
   "phone": "+55 (31) 9 9882-9940",
   "email": "iago.luancj@gmail.com",
@@ -28,6 +28,12 @@
         "description": "Consigo criar projetos de UX/UI no Figma e compreender outros projetos propostos com facilidade."
       },
       {
+        "name": "AWS DevOps",
+        "level": "Intermédiario",
+        "logo": "https://cdn.iconscout.com/icon/free/png-256/free-aws-1869025-1583149.png",
+        "description": "Concluí o curso 'DevOps on AWS Integrated Course Program - AWS' e já utilizo alguns dos microservios da AWS em meu trabalho."
+      },
+      {
         "name": "Typescript",
         "level": "Básico",
         "logo": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png",
@@ -49,7 +55,7 @@
         "name": "SQL",
         "level": "Básico",
         "logo": "https://cdn.icon-icons.com/icons2/273/PNG/256/icon_sql_256_30046.png",
-        "description": "Atualmente utilizando no trabalho e me especializando na linguagem."
+        "description": "Estou me especializando em SQL para uso no trabalho e concluí o curso 'SQL: A Practical Introduction for Querying Databases - IBM'"
       },
       {
         "name": "HTML5",
