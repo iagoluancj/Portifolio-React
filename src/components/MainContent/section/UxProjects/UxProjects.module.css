@@ -97,6 +97,7 @@
 .uxProject__Process ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
     justify-content: center;
@@ -122,7 +123,7 @@
     font-weight: 500;
 }
 
-@media (max-width: 1326px) {
+@media (max-width: 1226px) {
     .uxProject__Organization {
         flex-direction: column;
 

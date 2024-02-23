@@ -21,11 +21,9 @@ function UxProjects() {
                 "process": [
                     "Competitive Audit Template",
                     "Affinity Diagram",
-                    "Empathy Map",
                     "UX Research Study Plan - HI-FI Mockups",
                     "Prioritized Insights",
                     "Insight Identification",
-                    "Elevator Pitch",
                     "Research Presentation",
                     "User Journey Map"
                 ],
@@ -62,7 +60,6 @@ function UxProjects() {
                     "User Persona",
                     "Low-Fidelity Prototypes",
                     "Usability Testing",
-                    "Accessibility",
                     "Prioritized Insights",
                     "Performance Metrics",
                 ],
@@ -78,13 +75,12 @@ function UxProjects() {
                 ],
                 "role": "UX/UI Designer",
                 "process": [
-                    "Competitive Audit Template",
-                    "User Persona",
                     "Wireframes",
                     "Usability Testing",
                     "High-Fidelity Prototypes",
                     "Accessibility Evaluation",
                     "User Flow Analysis",
+                    "Empathy Map",
                     "A/B Testing"
                 ],
                 "observation": "Este foi o segundo projeto, aqui tive uma virada de chave"
