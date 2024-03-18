@@ -4,6 +4,7 @@ import cinesnack from '../UxProjects/img/cinesnack.PNG';
 import portfolioImg from '../UxProjects/img/portfolio.PNG';
 import rcpImg from '../UxProjects/img/rcp.PNG';
 import ecommerceImg from '../UxProjects/img/ecommerce.png';
+import openTab from '../../../../assets/img/open_in_new_white_24dp.svg'
 
 
 function UxProjects() {
@@ -21,7 +22,7 @@ function UxProjects() {
                 "process": [
                     "Competitive Audit Template",
                     "Affinity Diagram",
-                    "UX Research Study Plan - HI-FI Mockups",
+                    "UX Research Study Plan",
                     "Prioritized Insights",
                     "Insight Identification",
                     "Research Presentation",
@@ -53,7 +54,7 @@ function UxProjects() {
                 "name": "rcp",
                 "link": [
                     { "link": "https://drive.google.com/file/d/1nhFCbVQrwL8FsVvXWLyU-6ZmxxR5snK-/view?usp=drive_link" },
-                    { "desc": "Complete project presentation" }
+                    { "desc": "Apresentação do projeto" }
                 ],
                 "role": "UX/UI Designer",
                 "process": [
@@ -105,7 +106,7 @@ function UxProjects() {
                         <div className={styles.uxProject__Header}>
                             <div className={styles.uxProject__Name}>{project.organization}</div>
                             <div className={styles.uxProject__Role}>My role: <span>{project.role}</span></div>
-                            <a href={project.link[0].link} target='_blank' rel="noreferrer" className={styles.uxProject__Link}>{project.link[1].desc}</a>
+                            <a href={project.link[0].link} target='_blank' rel="noreferrer" className={styles.uxProject__Link}>{project.link[1].desc}<img src={openTab} className={styles.uxProject__LinkIcon} alt="" /></a>
                             <div className={styles.uxProject__Describe}><span>Breve descrição:</span> <p>{project.description}</p></div>
                         </div>
                         <div className={styles.uxProject__Process}>
@@ -128,40 +129,6 @@ function UxProjects() {
             ))}
         </div>
     )
-
-    // return (
-    //     <div className={styles.uxProjects}>
-    //         <div className={styles.uxProject}>
-    //             <div className={styles.uxProject__Organization}>
-    //                 <img src={coffeeDelivery} alt="" />
-    //                 <div className={styles.uxProject__Header}>
-    //                     <div className={styles.uxProject__Name}>RCP - Project for Social Welfare</div>
-    //                     <div className={styles.uxProject__Role}>My role:  <span>UX designer leading</span></div>
-    //                     <a href="google.com" className={styles.uxProject__Link}>Apresentação completa do projeto</a>
-    //                     <div className={styles.uxProject__Describe}><span>Breve descrição:</span> <p>Lorem ipsum dolor sit amet, consectetur adipisicing turi enim dolor vitae. Beatae magni, eveniet assumenda earum vero illo fugit quia similique exercitationem laudantium error quae molestiae fuga a.</p></div>
-    //                 </div>
-    //                 <div className={styles.uxProject__Process}>
-    //                     <ul>
-    //                         <div>
-    //                             <li><span>{">"}</span><a href="">{" Competitive audit template"}</a></li>
-    //                             <li><span>{">"}</span>{" Affinity diagram"}</li>
-    //                             <li><span>{">"}</span>{" Empathy Map"}</li>
-    //                             <li><span>{">"}</span>{" UX Research Study Plan - HI-FI Mockups"}</li>
-    //                             <li><span>{">"}</span>{" Prioritized Insights"}</li>
-    //                         </div>
-    //                         <div>
-    //                             <li><span>{">"}</span>{" Insight Identification"}</li>
-    //                             <li><span>{">"}</span>{" Elevator Pitch"}</li>
-    //                             <li><span>{">"}</span>{" Research Presentation"}</li>
-    //                             <li><span>{">"}</span>{" User Journey Map "}</li>
-    //                         </div>
-    //                     </ul>
-    //                 </div>
-    //             </div>
-    //             <div className={styles.uxProject__Observation}><span>Observação:</span> primeiro projeto ux criado. </div>
-    //         </div>
-    //     </div>
-    // )
 }
 
 export default UxProjects;

@@ -4,8 +4,8 @@ function Header() {
     return (
         <header>
             <div id="inicio" className={styles.header__Content}>
-                <h1 className={styles.header__Content_h1}>Who am I? My projects? Let&apos;s see!</h1>
-                <p>This is my portfolio, where I share a bit about myself, my projects, and skills. I hope you&apos;re as excited as I am :{')'}</p>
+                <h1 className={styles.header__Content_h1}>Quem sou eu? Meus projetos? Vamos ver!</h1>
+                <p>Este é o meu portfólio, onde compartilho um pouco sobre mim, meus projetos e habilidades. Espero que você esteja tão animado quanto eu :{')'}</p>
             </div>
         </header>
     )

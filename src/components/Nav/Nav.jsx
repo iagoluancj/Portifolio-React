@@ -37,8 +37,8 @@ function Nav() {
 
                     <div className={`${styles.acessibilityFather}`}>
                         <div className={styles.optionsAcessibility}>
-                            <span><a href="https://chromewebstore.google.com/search/screen%20reader" rel="noreferrer" target='_blank'>Screen reader</a></span>
-                            <span><a href="https://chromewebstore.google.com/search/Magnifying%20glass" rel="noreferrer" target='_blank'>Magnifying glass</a></span>
+                            <span><a href="https://chromewebstore.google.com/search/screen%20reader" rel="noreferrer" target='_blank'>Leitor de tela</a></span>
+                            <span><a href="https://chromewebstore.google.com/search/Magnifying%20glass" rel="noreferrer" target='_blank'>Zoom de tela</a></span>
                         </div>
                         <div className={styles.acessibility}></div>
                     </div>

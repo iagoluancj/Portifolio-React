@@ -88,7 +88,7 @@ function MainContent() {
                                     ))}
                                 </ul>
                             </div>
-                            <ButtonMore className={styles.buttonCurriculo} value="Curriculum PDF" href="https://drive.google.com/file/d/1USCkHd0AUsswsoLOrTbebbqJnzIX0kCL/view?usp=drive_link" />
+                            <ButtonMore className={styles.buttonCurriculo} value="Curriculum PDF" href="https://drive.google.com/file/d/17tYRNteuDTNl0JlMQOuhP1s0PnD3lBQq/view?usp=sharing" />
                         </div>
                     </div>
 
@@ -110,7 +110,7 @@ function MainContent() {
                             ))}
                         </div>
                         <div onClick={handleCreateNewTech}>
-                            <ButtonMore id="MoreTechs" disabled={isButtonDisabled} value="To see more" />
+                            <ButtonMore id="MoreTechs" disabled={isButtonDisabled} value="Ver mais" />
                         </div>
                     </div>  
                 </aside>

@@ -11,7 +11,7 @@ import designSystem from '../../../assets/img/storyBook.PNG';
 import igniteShop from '../../../assets/img/igniteShop.PNG';
 import pokedex from '../../../assets/img/pokedex.PNG';
 import UxProjects from "./UxProjects/UxProjects";
-
+import doceria from '../../../assets/img/doceria.PNG'
 
 
 function Section() {
@@ -21,7 +21,7 @@ function Section() {
     const [selectedCategory, setSelectedCategory] = useState("devProjects");
 
 
-    const favorites = ['coffeeDelivery', 'Portifolio-React', 'toDo-list']
+    const favorites = ['doceria', 'Portifolio-React', 'coffeeDelivery']
     const thumbs = {
         'coffeeDelivery': coffeeDelivery,
         'Portifolio-React': portifolioReact,
@@ -29,6 +29,7 @@ function Section() {
         'design-system': designSystem,
         'ignite-shop': igniteShop,
         'pokedex': pokedex,
+        'doceria': doceria,
     };
     function capitalizeFirstLetter(str) {
         return str.charAt(0).toUpperCase() + str.slice(1);
@@ -89,6 +90,7 @@ function Section() {
                                 />
                             )}
                         </div>
+                        {console.log(project.updated_at)}
                         <p>{`Updated ${Math.floor((new Date() - new Date(project.updated_at)) / (1000 * 60 * 60 * 24))} days ago.`}</p>
                     </a>
                 </div>
@@ -136,7 +138,7 @@ function Section() {
                 <div className={`${selectedCategory === "devProjects" ? styles.projectDiv : ''}`}>
                     {filterProject(selectedCategory)}
                 </div>
-                <button onClick={handleMoreProjects}><ButtonMore value="To see more" disabled={selectedCategory === "uxProjects" || isButtonDisabled}></ButtonMore></button>
+                <button onClick={handleMoreProjects}><ButtonMore value="Ver mais" disabled={selectedCategory === "uxProjects" || isButtonDisabled}></ButtonMore></button>
             </div>
         </section>
     )
