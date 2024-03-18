@@ -11,7 +11,7 @@ import designSystem from '../../../assets/img/storyBook.PNG';
 import igniteShop from '../../../assets/img/igniteShop.PNG';
 import pokedex from '../../../assets/img/pokedex.PNG';
 import UxProjects from "./UxProjects/UxProjects";
-import doceria from '../../../assets/img/doceria.PNG'
+import doceria from '../../../assets/img/doceria.png'
 
 
 function Section() {
