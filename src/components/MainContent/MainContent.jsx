@@ -34,7 +34,7 @@ function MainContent() {
                         <span className={styles.profile__divPhoto}>
                             <img src={jsonData.photo} alt="" className={styles.profile__Img} />
                         </span>
-                        <div className={styles.profile__Occupation}><h4>{jsonData.occupation}</h4></div>
+                        <div className={styles.profile__Occupation}><span>{jsonData.occupation}</span></div>
                         <div className={styles.profile__Medias}>
                             <a href={jsonData.socialMedias.instagram} aria-label="Link para o Instagram" target='blank'><FaInstagram size={40} /></a>
                             <a href={jsonData.socialMedias.linkedin} aria-label="Link para o Linkedin" target='blank'><FaLinkedin size={40} /></a>

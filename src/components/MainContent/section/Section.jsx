@@ -12,7 +12,7 @@ import igniteShop from '../../../assets/img/igniteShop.PNG';
 import pokedex from '../../../assets/img/pokedex.PNG';
 import UxProjects from "./UxProjects/UxProjects";
 import doceria from '../../../assets/img/doceria.png'
-
+import quote from '../../../assets/img/quote.PNG'
 
 function Section() {
     const [projects, setProjects] = useState([]);
@@ -30,6 +30,7 @@ function Section() {
         'ignite-shop': igniteShop,
         'pokedex': pokedex,
         'doceria': doceria,
+        'quoteGeneratorAI': quote
     };
     function capitalizeFirstLetter(str) {
         return str.charAt(0).toUpperCase() + str.slice(1);

@@ -109,7 +109,7 @@ aside img {
     border-radius: 5px;
 }
 
-.profile__Occupation h4 {
+.profile__Occupation span {
     background-image: var(--gradient-Red);
 
     background-clip: text;
