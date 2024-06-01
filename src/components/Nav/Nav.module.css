@@ -1,6 +1,8 @@
 nav {
     display: flex;
     justify-content: center;
+
+    transition: 20s ease-out;
 }
 
 .nav {
@@ -174,6 +176,11 @@ nav {
 
 #nav__menuBurguer {
     display: none;
+
+.principal__nav {
+
+}
+
 }
 
 @media (max-width: 1240px) {
