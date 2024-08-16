@@ -56,7 +56,7 @@ function Nav() {
                         </a>
                         <div className={styles.nav__Options}>
                             <div className={isMenuOpen ? styles.nav__OptionsSDiv : styles.nav__OptionsSDivHidden}>
-                                <a href="#Project" className={styles.nav__Options_Button}>Projects</a>
+                                <a href="#Techs" className={styles.nav__Options_Button}>Projects</a>
                                 <a href="#Techs" className={styles.nav__Options_Button}>Tech&apos;s</a>
                                 <a href="#Contact" className={styles.nav__Options_Button}>Contact</a>
                                 <a href="#About" className={styles.nav__Options_Button}>About me</a>

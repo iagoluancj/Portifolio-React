@@ -45,6 +45,16 @@
     margin-right: 2rem;
 }
 
+.uxProject_ImagePrincipal {
+    transition: .3s;
+}
+
+.uxProject_ImagePrincipal:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: .3s;
+}
+
 .uxProject__Name {
     font-size: 30px;
     font-weight: 700;

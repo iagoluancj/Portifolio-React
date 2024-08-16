@@ -88,7 +88,7 @@ function MainContent() {
                                     ))}
                                 </ul>
                             </div>
-                            <ButtonMore className={styles.buttonCurriculo} value="Curriculum PDF" href="https://drive.google.com/file/d/17tYRNteuDTNl0JlMQOuhP1s0PnD3lBQq/view?usp=sharing" />
+                            <ButtonMore disabled={true} className={styles.buttonCurriculo} value="Curriculum PDF" href="https://drive.google.com/file/d/17tYRNteuDTNl0JlMQOuhP1s0PnD3lBQq/view?usp=sharing" />
                         </div>
                     </div>
 

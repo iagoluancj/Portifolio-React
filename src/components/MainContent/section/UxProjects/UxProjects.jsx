@@ -4,6 +4,7 @@ import cinesnack from '../UxProjects/img/cinesnack.PNG';
 import portfolioImg from '../UxProjects/img/portfolio.PNG';
 import rcpImg from '../UxProjects/img/rcp.PNG';
 import ecommerceImg from '../UxProjects/img/ecommerce.png';
+import treinamentoAiko from '../UxProjects/img/plataformaTreinamento.png'
 import openTab from '../../../../assets/img/open_in_new_white_24dp.svg'
 
 
@@ -11,24 +12,20 @@ function UxProjects() {
     const projectsData = {
         "uxProjects": [
             {
-                "organization": "CineSnack",
-                "name": "cinesnack",
-                "description": "No projeto CineSnack, o foco era melhorar a acessibilidade ao cinema para pessoas com deficiências temporárias e permanentes. A apresentação completa oferece insights detalhados sobre o projeto.",
+                "organization": "Plataforma de treinamentos Aiko",
+                "name": "treinamentoAiko",
+                "description": "O projeto foi criado devido a ausência percebida atualmente na Aiko Digital, onde uma plataforma dedicada para treinamentos internos e externos se faz essencial.",
                 "link": [
-                    { "link": "https://docs.google.com/presentation/d/1YaEhYodvyu_cOkTe9gmCMC23ymOLWg4cxhCAlySDjZQ/edit?usp=sharingy" },
-                    { "desc": "Case Study" }
+                    { "link": '0' },
+                    { "desc": "" }
                 ],
                 "role": "UX/UI Designer",
                 "process": [
-                    "Competitive Audit Template",
-                    "Affinity Diagram",
-                    "UX Research Study Plan",
-                    "Prioritized Insights",
-                    "Insight Identification",
-                    "Research Presentation",
-                    "User Journey Map"
+                    "Design Thinking",
+                    "Mockup Hi-Fi",
+                    "Wireframe",
+                    "User Interviews",
                 ],
-                "observation": "Primeiro projeto UX criado"
             },
             {
                 "organization": "Portfolio React",
@@ -46,7 +43,7 @@ function UxProjects() {
                     "Developed the application",
                     "Continuous monitoring"
                 ],
-                "observation": "Devido ao estilo pessoal e conceito claro do portfólio, evitei os processos de testes e design thinking. Contudo, o resultado foi melhor que o esperado."
+                "observation": "Devido ao estilo pessoal, pulei algumas etapas durante a concepção. O resultado ficou conforme o esperado."
             },
             {
                 "organization": "RCP - Project for Social Welfare",
@@ -85,7 +82,27 @@ function UxProjects() {
                     "A/B Testing"
                 ],
                 "observation": "Este foi o segundo projeto, aqui tive uma virada de chave"
-            }
+            },
+            {
+                "organization": "CineSnack",
+                "name": "cinesnack",
+                "description": "No projeto CineSnack, o foco era melhorar a acessibilidade ao cinema para pessoas com deficiências temporárias e permanentes. A apresentação completa oferece insights detalhados sobre o projeto.",
+                "link": [
+                    { "link": "https://docs.google.com/presentation/d/1YaEhYodvyu_cOkTe9gmCMC23ymOLWg4cxhCAlySDjZQ/edit?usp=sharingy" },
+                    { "desc": "Case Study" }
+                ],
+                "role": "UX/UI Designer",
+                "process": [
+                    "Competitive Audit Template",
+                    "Affinity Diagram",
+                    "UX Research Study Plan",
+                    "Prioritized Insights",
+                    "Insight Identification",
+                    "Research Presentation",
+                    "User Journey Map"
+                ],
+                "observation": "Primeiro projeto UX criado"
+            },
         ]
 
     };
@@ -95,6 +112,7 @@ function UxProjects() {
         "portfolio": portfolioImg,
         "rcp": rcpImg,
         "ecommerce": ecommerceImg,
+        "treinamentoAiko": treinamentoAiko,
     };
 
     return (
@@ -102,11 +120,20 @@ function UxProjects() {
             {projectsData.uxProjects.map((project, index) => (
                 <div key={index} className={styles.uxProject}>
                     <div className={styles.uxProject__Organization}>
-                        <img src={projectImages[project.name]} alt={`Thumbnail do projeto ${project.name}`}/>
+                        <img src={projectImages[project.name]}  className={styles.uxProject_ImagePrincipal} alt={`Thumbnail do projeto ${project.name}`} />
                         <div className={styles.uxProject__Header}>
                             <div className={styles.uxProject__Name}>{project.organization}</div>
                             <div className={styles.uxProject__Role}>My role: <span>{project.role}</span></div>
-                            <a href={project.link[0].link} target='_blank' rel="noreferrer" className={styles.uxProject__Link}>{project.link[1].desc}<img src={openTab} className={styles.uxProject__LinkIcon} alt="" /></a>
+                            {project.link[0].link !== '0' ? (
+                                <a href={project.link[0].link} target='_blank' rel="noreferrer" className={styles.uxProject__Link}>
+                                    {project.link[1].desc}
+                                    <img src={openTab} className={styles.uxProject__LinkIcon} alt="" />
+                                </a>
+                            ) : (
+                                <a href={project.link[0].link} target='_blank' rel="noreferrer" className={styles.uxProject__Link}>
+                                    {project.link[1].desc}
+                                </a>
+                            )}
                             <div className={styles.uxProject__Describe}><span>Breve descrição:</span> <p>{project.description}</p></div>
                         </div>
                         <div className={styles.uxProject__Process}>
@@ -124,7 +151,12 @@ function UxProjects() {
                             </ul>
                         </div>
                     </div>
-                    <div className={styles.uxProject__Observation}><span>Observação:</span> {project.observation}</div>
+                    <div className={styles.uxProject__Observation}>
+                        {project.observation && (
+                            <span>Observação: </span>
+                        )}
+                        {project.observation}
+                    </div>
                 </div>
             ))}
         </div>
