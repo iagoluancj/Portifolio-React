@@ -12,7 +12,7 @@
     "instagram": "https://www.instagram.com/iago.luancj/"
   },
   "resume": "Me chamo Iago, tenho 23 anos e sou apaixonado por tecnologia desde criança. Após a adolescência, descobri também a paixão pela psicologia, buscando entender o porquê as pessoas são como são. Sou amante de astronomia e um ávido fã de ficção científica. Nas horas vagas um jogador mediano.",
-  "resume1": "Possuo uma boa análise da experiência do usuário (UX) devido a experiências anteriores com contato direto a usuários finais e colaboradores. Tenho também como parte essencial de meu curriculo boas habilidades em desenvolvimento web, onde transformamos ideias em realidade para atender às necessidades do usuário. No mais, é isso! Me resumir em pouco mais de 2000 caracteres é muito pouco para me conhecer, porém é um iníci, mas é o inicio da nossa conversa. Abaixo, há um pouco mais sobre minhas habilidades técnicas.",
+  "resume1": "Possuo uma boa análise da experiência do usuário (UX) devido a experiências anteriores com contato direto a usuários finais e colaboradores. Tenho também como parte essencial de meu curriculo boas habilidades em desenvolvimento web, onde transformamos ideias em realidade para atender às necessidades do usuário. No mais, é isso! Me resumir em pouco mais de 2000 caracteres é muito pouco para me conhecer, contudo, é o inicio da nossa conversa. Abaixo, há um pouco mais sobre minhas habilidades técnicas.",
   "skills": {
     "hardSkills": [
       {
@@ -25,7 +25,7 @@
         "name": "Figma",
         "level": "Intermédiario",
         "logo": "https://cdn.icon-icons.com/icons2/2699/PNG/512/figma_logo_icon_170157.png",
-        "description": "Consigo criar projetos de UX/UI no Figma e compreender outros projetos propostos com facilidade."
+        "description": "Tenho prática com o uso do Figma, onde consigo criar e compreender projetos sem dificuldade."
       },
       {
         "name": "AWS DevOps",
@@ -71,9 +71,9 @@
       }
     ],
     "competencias": [
+      "UX Design Certificate - Google Career (Completed)",
       "Análise e desenvolvimento de sistemas - Unopar (In progress)",
-      "UX Google Certificate - Google Career (Completed)",
-      "Technical Course in Computer Science (Completed)",
+      "Computer technical course (Completed)",
       "Intermediate English"
     ]
   },

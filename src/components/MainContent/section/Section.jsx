@@ -16,9 +16,9 @@ import quote from '../../../assets/img/quote.PNG'
 
 function Section() {
     const [projects, setProjects] = useState([]);
-    const [moreProjects, setMoreProjects] = useState(5)
+    const [moreProjects, setMoreProjects] = useState(6)
     const [isButtonDisabled, setIsButtonDisabled] = useState(false);
-    const [selectedCategory, setSelectedCategory] = useState("devProjects");
+    const [selectedCategory, setSelectedCategory] = useState("uxProjects");
 
 
     const favorites = ['doceria', 'Portifolio-React', 'coffeeDelivery']
