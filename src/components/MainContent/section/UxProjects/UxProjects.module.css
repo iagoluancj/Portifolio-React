@@ -50,7 +50,6 @@
 }
 
 .uxProject_ImagePrincipal:hover {
-    cursor: pointer;
     transform: scale(1.03);
     transition: .3s;
 }
@@ -122,7 +121,7 @@
 }
 
 .uxProject__Process li {
-    padding: 1rem 0rem;
+    padding: 1rem 1rem;
     font-weight: 500;
 }
 

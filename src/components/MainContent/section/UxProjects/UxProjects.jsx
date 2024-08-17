@@ -3,8 +3,9 @@ import styles from './UxProjects.module.css'
 import cinesnack from '../UxProjects/img/cinesnack.PNG';
 import portfolioImg from '../UxProjects/img/portfolio.PNG';
 import rcpImg from '../UxProjects/img/rcp.PNG';
-import ecommerceImg from '../UxProjects/img/ecommerce.png';
+import ecommerceImg from '../UxProjects/img/ecommerce.PNG';
 import treinamentoAiko from '../UxProjects/img/plataformaTreinamento.png'
+import doceriaIzah from '../UxProjects/img/doceriaIzah.PNG'
 import openTab from '../../../../assets/img/open_in_new_white_24dp.svg'
 
 
@@ -16,8 +17,8 @@ function UxProjects() {
                 "name": "treinamentoAiko",
                 "description": "O projeto foi criado devido a ausência percebida atualmente na Aiko Digital, onde uma plataforma dedicada para treinamentos internos e externos se faz essencial.",
                 "link": [
-                    { "link": '0' },
-                    { "desc": "" }
+                    { "link": 'https://www.figma.com/proto/EIyR7nujC4PVZVbRr9IZ0k/Projetos?node-id=1-565&t=MC3ZYIRWP9rhMOXl-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A565&show-proto-sidebar=1' },
+                    { "desc": "Mockup Hi-Fi" }
                 ],
                 "role": "UX/UI Designer",
                 "process": [
@@ -44,6 +45,22 @@ function UxProjects() {
                     "Continuous monitoring"
                 ],
                 "observation": "Devido ao estilo pessoal, pulei algumas etapas durante a concepção. O resultado ficou conforme o esperado."
+            },
+            {
+                "organization": "Doceria da Izah",
+                "name": "doceriaIzah",
+                "description": "Neste projeto, fui responsável pela criação, idealização e desenvolvimento. Visando suprir a lacuna existente na comunicação online dinâmica da Doceria da Izah devido à ausência de um site.",
+                "link": [
+                    { "link": 'https://www.figma.com/proto/EIyR7nujC4PVZVbRr9IZ0k/Projetos?node-id=91-256&t=MC3ZYIRWP9rhMOXl-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=91%3A256&show-proto-sidebar=1' },
+                    { "desc": "Wireframe" }
+                ],
+                "role": "Web developer and UX/UI Designer",
+                "process": [
+                    "Design Thinking ",
+                    "Mockup Hi-Fi",
+                    "Wireframe",
+                    "User Interviews",
+                ],
             },
             {
                 "organization": "RCP - Project for Social Welfare",
@@ -113,6 +130,7 @@ function UxProjects() {
         "rcp": rcpImg,
         "ecommerce": ecommerceImg,
         "treinamentoAiko": treinamentoAiko,
+        "doceriaIzah": doceriaIzah,
     };
 
     return (
