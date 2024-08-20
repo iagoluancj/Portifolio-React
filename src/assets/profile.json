@@ -1,7 +1,7 @@
 {
   "name": "Iago Jesus",
   "photo": "https://avatars.githubusercontent.com/u/86308522?s=400&u=fd638dd57484d6323c33036cfcf726cfa8d693b1&v=4",
-  "occupation": "UX/Frontend Developer",
+  "occupation": "UX/Frontend Engineer",
   "location": "Belo horizonte - MG",
   "phone": "+55 (31) 9 9882-9940",
   "email": "iago.luancj@gmail.com",
@@ -18,7 +18,7 @@
       {
         "name": "JavaScript",
         "level": "Intermédiario",
-        "logo": "https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_js_icon_130510.png",
+        "logo": "JavaScript",
         "description": "Tenho uma base sólida com JS, o que me permite produzir resultados satisfatórios com os recursos disponíveis."
       },
       {

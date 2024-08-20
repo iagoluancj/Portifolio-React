@@ -1,12 +1,18 @@
 import styles from './MainContent.module.css'
 import jsonData from '../../assets/profile.json'
 
-import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaGithub, FaLinkedin, FaFigma, FaAws, FaReact, FaHtml5, FaCss3Alt } from 'react-icons/fa';
+import { PiFileSql } from "react-icons/pi";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiTypescript } from "react-icons/si";
+
+
 import email from '../../assets/img/emailWhite.png'
 import location from '../../assets/img/locationWhite.png'
 import skills from '../../assets/img/skillsWhite.png'
 import tel from '../../assets/img/callWhite.png'
 import user from '../../assets/img/userWhite.png'
+import { IoLogoJavascript } from "react-icons/io5";
 
 import { useState } from 'react';
 
@@ -16,7 +22,7 @@ import Section from './section/Section';
 function MainContent() {
     const [techs, setTechs] = useState([
         1, 2, 3, 4, 5
-    ])  
+    ])
     const [isButtonDisabled, setIsButtonDisabled] = useState(false);
     function handleCreateNewTech() {
         //essa linha impede que o coportamento padrão do HTML seja executado (abrir em uma nova aba, diverge do SPA)
@@ -26,8 +32,22 @@ function MainContent() {
         setTechs([...techs, techs.length + 1])
     }
 
+    const iconMap = {
+        'JavaScript': <IoLogoJavascript size={100} />,
+        'Figma': <FaFigma size={100}/>,
+        'AWS DevOps': <FaAws size={100} />,
+        'Typescript': <SiTypescript size={100} />,
+        'React': <FaReact size={100} />,
+        'NextJS': <TbBrandNextjs size={100} />,
+        'SQL': <PiFileSql size={100} />,
+        'HTML5': <FaHtml5 size={100} />,
+        'CSS3': <FaCss3Alt size={100} />,
+    };
+
     return (
         <main>
+            <IoLogoJavascript />
+
             <div className={styles.main__div}>
                 <aside>
                     <div className={styles.profile}>
@@ -93,7 +113,7 @@ function MainContent() {
                     </div>
 
                     <div id="Techs" className={styles.profile__Techs}>
-                        <h2>Technologies and tools</h2>                       
+                        <h2>Technologies and tools</h2>
                         <div className={styles.profile__TechsCarrousel}>
                             {jsonData.skills.hardSkills.slice(0, techs.length).map((hardSkills, index) => (
                                 <div key={index} className={styles.profile__TechsOne}>
@@ -103,7 +123,9 @@ function MainContent() {
                                     </div>
                                     <span className={styles.profile__InfoP}>{jsonData.skills.hardSkills[index].level}</span>
                                     <div className={styles.profile__TechsImageAndP}>
-                                        <img src={jsonData.skills.hardSkills[index].logo} alt={`Ícone ${jsonData.skills.hardSkills[index].name}`} />
+                                        <div className={styles.profile__IconContainer}>
+                                            {iconMap[jsonData.skills.hardSkills[index].name]}
+                                        </div>
                                         <p>{jsonData.skills.hardSkills[index].description}</p>
                                     </div>
                                 </div>
@@ -112,7 +134,7 @@ function MainContent() {
                         <div onClick={handleCreateNewTech}>
                             <ButtonMore id="MoreTechs" disabled={isButtonDisabled} value="Ver mais" />
                         </div>
-                    </div>  
+                    </div>
                 </aside>
                 <Section />
             </div>

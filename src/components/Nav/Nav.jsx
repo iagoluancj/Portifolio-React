@@ -50,7 +50,7 @@ function Nav() {
                                 <div className={styles.nav__ImgLogo} aria-label="Logo Iago Jesus"></div>
                                 <div className={styles.nav__ImgNameDescribe}>
                                     <span className={styles.nav_describeOne}>Iago Jesus</span>
-                                    <span className={styles.nav_describeTwo}>UX/Frontend Developer</span>
+                                    <span className={styles.nav_describeTwo}>UX/Frontend Engineer</span>
                                 </div>
                             </div>
                         </a>

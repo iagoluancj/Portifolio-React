@@ -126,12 +126,17 @@ aside img {
 
 .profile__Medias a {
     margin: 0rem 0.5rem;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .profile__Medias a:hover {
-    padding: 0rem 1rem;
-    transition: 0.3s;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.profile__IconContainer {
+    color: #FA5252;
+    padding-left: .3rem;
 }
 
 .profile__Informations {
